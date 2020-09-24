@@ -147,29 +147,74 @@
 
     <div align="start" class="content"><br>
 <div style="text-align:justify; text-justify: inter-word">
+<p>
 <img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> My current main research interest concerns developing a mathematically rigorous theory of fracture at an atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
-<p>The atomistic scale is known to lie at the heart of fracture, with cracks propagating via atomistic mechanisms involving breaking interaction bonds between individual atoms. If one zooms in on a crack tip, firstly it leads to a simplified geometry and then the atomistic structure is revealed, as illustrated below.</p>
+</p>
+<p>
+The atomistic scale is known to lie at the heart of fracture, with cracks propagating via atomistic mechanisms involving breaking interaction bonds between individual atoms. If one zooms in on a crack tip, firstly it leads to a simplified geometry and then the atomistic structure is revealed, as illustrated below. 
 </div>
 <img src="/crack_zoom2.jpg" width="700">
 <div style="text-align:justify; text-justify: inter-word">
-The following is a gist of my research interests, a more detailed treatment is to be found in the publications themselves, with freely available preprint available in the <a href="/publications/">Publications</a> section of this webpage. 
+The following is a gist of my current research interests. A more detailed treatment is to be found in the publications themselves, with with freely downloadable preprints available in the <a href="/publications/">Publications</a> section of this webpage. 
+</p>
 </div>
 <h3 id="atomistic-brittle-fracture">Atomistic brittle fracture</h3>
 <div style="text-align:justify; text-justify: inter-word">
-<img src="/ncflex1.jpg" width="250" style="float:right; margin-left:15px;margin-bottom:15px">
-In brittle fracture, with no plastic deformation occurring around the crack tip, the fundamental insight of the standard continuum fracture mechanics lies in identifying a single parameter, known as *the stress intensity factor (SIF)* and showing that if it exceeds a material-dependent critical value, then it is energetically favourable for the crack to propagate.
-<p>The key phenomenon in atomistic fracture is <em>lattice trapping</em>, a term referring to there existing a range of values for the stress intensity factor for which the crack remains locally stable, i.e. <em>lattice-trapped</em>, thus conceptually invalidating the key insight of the continuum theory. The critical SIF computed directly from finite-size atomistic models lies somewhere in-between and is known to deviate from the continuum theory prediction.</p>
-<p>My work in this regards is at the junction of the mathematical analysis of the underlying modelling, combined with proposing novel insights leading to quantifiable improvements in the accuracy of the corresponding computer simulations. Here are some snippets for illustration.</p>
+<p> In brittle fracture, with no plastic deformation occurring around the crack tip, the fundamental insight of the standard continuum fracture mechanics lies in identifying a single parameter \(K\), known as <em>the stress intensity factor</em> and showing that if it exceeds a material-dependent critical value, \(K_{\rm c}\) then it is energetically favourable for the crack to propagate.</p>
+<p>
+The key atomistic phenomenon not captured in the continuum theory is known as <em>lattice trapping</em>, a term referring to there existing a range of values for the stress intensity factor \((K_-,K_+)\) for which the crack remains locally stable, i.e. <em>lattice-trapped</em>, thus conceptually invalidating the key insight of the continuum theory. The critical stress intensity factor \(K_{\rm c}\) computed directly from finite-size atomistic models lies somewhere in-between and is known to deviate from the continuum theory prediction. 
+</p>
+<p>
+My work in this area is at the junction of mathematical analysis of the underlying models and the development of novel algorithms leading to quantifiable improvements in the accuracy of the computer simulations. 
+</p>
+<p>
+<img src="/decay.png" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+The basic premise is to consider deformations of some crystalline lattice \(\Lambda \subset \mathbb{R}^n\) of the form
+$$
+y\,:\Lambda \to \mathbb{R}^k,\quad y(m) = K\hat{u}(m-\alpha) + u(m),
+$$
+where \(K \in \mathbb{R}\) is the stress intensity factor of the mode of fracture considered, \(\hat{u}\) is the continuum theory <em> predictor </em>, known to give rise to a strain field \(|D\hat{u}(m)| \sim |m|^{-1/2}\), \(\alpha \in \mathbb{R}^n\) is the crack tip position and \(u\) is the <em> atomistic correction</em>, which is constrained to belong to function space \(\dot{\mathcal{H}^1}\) (discrete variant of a Sobolev space \(\dot{H}^1\)). The key achievement of <a href="/publications/#2018-antiplanecrack">[2]</a> is proving for certain models that at an equilibrium the atomistic correction strain field decays \(|Du(m)|~\sim~|m|^{-3/2}\), as confirmed in numerical tests shown to the right. 
+</p>
+<p>
+<img src="/static_conv.png" width="320" style="float:left; margin-right:15px;margin-bottom:15px">
+A finite domain approximation restricting
+$$
+u(m) = 0\;\forall m \not\in\Omega_R := \Lambda \cap B_R,
+$$
+gives rise to the analysis of cell size effects. Under the reasonable assumption that there exists a continuous path of equilibrium configurations in the infinite problem \(s~\mapsto~(u_s,K_s,\alpha_s)\), it is proven in <a href="/publications/#2019-antiplanecrack">[3]</a> that for \(R\) large enough there exists an approximate path of equlibrium configurations \(s~\mapsto~(u^R_s,K^R_s,\alpha^R_s)\) such that 
+$$
+\|Du_s-Du^R_s\|_{\ell^2} + |K_s - K^R_s| + |\alpha_s - \alpha_s^R| \lesssim R^{-1/2}.
+$$
+While the convergence rate follows directly from the decay properties of \(Du\), a recourse to bifurcation theory for Banach spaces is needed for this to to apply to continuous paths of equilibria.
+</p>
+<p>
+<img src="/ncflex1.jpg" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+The work in <a href="/publications/#2020-crack-physics">[5]</a> looks at practical ways of computing approximate equilibrium paths. In particular we have proposed the novel numerical-continuation-enhanced flexible boundary (NCFlex) scheme, which appears to improve the convergence rate to \(\mathcal{O}(R^{-1})\) and is also capable of identifying index-1 saddle equilibria with ease, thus constituting and indespensible tool for the study of energy barriers, as shown to the right. 
+</p>
+<p>
+It is hoped that more accurate NCFlex-type schemes can be systematically derived by marrying this approach with the idea of <em>development of solutions</em> first proposed in <a href="/publications/#2017-bcscrew">[1]</a>, which entails prescribing a more accurate continuum predictor.
+</p>
+<p>
+The NCFlex scheme applied to two realistic models of silicon yields the paths of equilibrium configurations shown below, which reveals subtle qualitative difference at the unstable segments of the equilibrium paths that would be near impossible to capture in methods known to date. 
+</p>
 </div>
 <img src="/ncflex2.jpg" width="700">
+<br>
 <h3 id="atomistic-near-crack-tip-plasticity">Atomistic near-crack-tip plasticity</h3>
 <div style="text-align:justify; text-justify: inter-word">
-In ductile fracture, the stresses near the crack tip lead to a build up topological defects known as dislocation, carriers of plastic deformation, which can potential shield the material from further crack propagation. 
-<p>In a recent independent endeavour, I have introduced a sophisticated geometric and functional framework of the lattice manifold complex, in which a cracked crystalline material is described by a Riemann surface corresponding to the complex square root mapping. The essence of it is presented in the following figure.</p>
+In ductile fracture, the stresses near the crack tip lead to a build up oftopological defects known as dislocation, carriers of plastic deformation, which can potentially shield the material from further crack propagation. 
+<p>In a recent independent endeavour <a href="/publications/#2020-near-crack-tip-pas">[4]</a>, I have introduced a novel geometric and functional framework of the <em>lattice manifold complex</em>, in which a cracked crystalline material is described by a CW complex structure defined on the Riemann surface
+$$
+\mathcal{S} = \lbrace (z,w) \in \Complex^2 \, | \, w^2 = z \rbrace
+$$
+corresponding to the complex square root mapping. The essence of the construction is presented in the following figure. 
+</p>
 </div>
 <img src="/duality.png" width="700">
 <div style="text-align:justify; text-justify: inter-word">
-The ongoing work is to capitalise on this to address several issues related to the mathematics of near-crack-tip plasticity, such as considering the rigorous passage from the atomistic scale to the mesoscopic scale. 
+<p>
+Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack openinng and a finite number of dislocations are present. This unlocks a number of possible further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale. 
+</p>
 </div>
 <h2 id="collaborators">Collaborators:</h2>
 <div>
@@ -177,7 +222,7 @@ The ongoing work is to capitalise on this to address several issues related to t
   <dd>
     <ul class="list-unstyled">
       <li><strong>University of Warwick, UK</strong>:</li>
-      <li><a href="https://warwick.ac.uk/fac/sci/maths/people/staff/braun/"> Julian Braun</a>, <a href="https://warwick.ac.uk/fac/sci/wcpm/people/pgrigorev/"> Petr Grigorev</a>, <a href="https://sites.google.com/site/thudso/"> Thomas Hudson</a> (PhD Advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
+      <li><a href="https://warwick.ac.uk/fac/sci/maths/people/staff/braun/"> Julian Braun</a>, <a href="https://warwick.ac.uk/fac/sci/wcpm/people/pgrigorev/"> Petr Grigorev</a>, <a href="https://sites.google.com/site/thudso/"> Thomas Hudson</a> (PhD advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
     </ul>
   </dd>
 <dd>
@@ -211,7 +256,7 @@ The ongoing work is to capitalise on this to address several issues related to t
 </main>
 
         <footer>
-            <p class="copyright text-muted">© 2020 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/calintat/minimal">Minimal</a>.</p>
+            <p class="copyright text-muted">© 2020 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
         </footer>
 
         
