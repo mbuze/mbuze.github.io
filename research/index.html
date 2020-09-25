@@ -199,7 +199,6 @@ The NCFlex scheme applied to two realistic models of silicon yields the paths of
 </p>
 </div>
 <img src="/ncflex2.jpg" width="700">
-<br>
 <h3 id="atomistic-near-crack-tip-plasticity">Atomistic near-crack-tip plasticity</h3>
 <div style="text-align:justify; text-justify: inter-word">
 In ductile fracture, the stresses near the crack tip lead to a build up oftopological defects known as dislocation, carriers of plastic deformation, which can potentially shield the material from further crack propagation. 
@@ -216,7 +215,35 @@ corresponding to the complex square root mapping. The essence of the constructio
 Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack openinng and a finite number of dislocations are present. This unlocks a number of possible further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale. 
 </p>
 </div>
-<h3 id="uncertainty-quantification-for-interatomic-potentials-with-applications-to-fracture">Uncertainty quantification for interatomic potentials with applications to fracture</h3>
+<h3 id="stochastic-approaches-to-atomistic-fracture">Stochastic approaches to atomistic fracture</h3>
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+In my capacity as a Research Associate at Cardiff University, I am working with Dr Angela Mihai on incorporating stochasticity into the modelling of atomistic fracture, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. 
+</p>
+<p>
+As an illustration, consider the simplified case of Mode III fracture under antiplane displacements \(y(m)~=~(0,0, y_3(m)),\,\forall m \in \Lambda\) with energy (morally) of the form
+$$
+\mathcal{E}(y) = \sum_{m \in \Lambda} \sum_{\rho \in \mathcal{R}} \phi(y_3(m+\rho) - y_3(m))),
+$$
+where \(\mathcal{R}\) is the set of interaction stencils and  \(\phi\) is the pair-potential.
+</p>
+<p>
+<img src="/sampled_func_example.png" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+If \(\phi\) is of the form
+$$
+\phi(r) = \alpha\left(1-\exp(-\beta r^2)\right),
+$$
+then it is of interest to understand how uncertainties around the choice of \(\alpha\) and \(\beta\) propagate to uncertaintities to the key quantities describing atomistic crack propagation, namely \(K_{\rm c}\) and \( (K_-,K_+)\). A plot of functions \(\phi\) for different parameter choices (with mean highlighted) can be seen to the right. 
+</p>
+<p>
+The choice of parameters has to be such that the notion of <em>lattice stability</em> is satisfied, which implies that both parameters should follow Gamma distribution. A direct calculation possible in this simple scenario then reveals that \(K_{\rm c} = C \beta^{-1/2}\) for some crystalline-structure-dependent known constant \(C\), thus revealing the propagation of uncertainties, as can be seen in a histogram plot below.
+</p>
+</div>
+<img src="/distr_example.png" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+The ongoing work is to formalise a general maximum-entropy-principle-based framework for uncertainty quantification in atomistic fracture, including accounting for the phenomenon of lattice trapping.
+</p>
 <h2 id="collaborators">Collaborators:</h2>
 <div>
 <dl class="dl-horizontal3">
