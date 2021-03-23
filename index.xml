@@ -25,7 +25,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>WCCM-ECCOMAS Congress; online, 11-15 January 2021; invited talk.    Warwick-Jiaotong Workshop: QM/MM methods and other multi-scale boundary conditions for atomistic material simulation; online, 22 June 2020; invited talk.    Applied and Computational Mathematics Seminar; Cardiff, 29 October 2019; seminar talk.    MACM International Conference CoMFoS19: Mathematical Aspects of Continuum Mechanics; Kanazawa, Japan 15 - 16 July 2019; invited talk; conference website.    Research visit to Kanazawa University; Japan, 13 June - 19 July 2019; hosted by Prof.</description>
+      <description>Münster Winterschool on Analysis and Applied Mathematics; online, 22-26 February 2021; workshop website.    IMSI Mathematical and Computational Materials Science Workshop; online, 15-19 February 2021; workshop website.    Warwick-Jiaotong Workshop: QM/MM methods and other multi-scale boundary conditions for atomistic material simulation; online, 22 June 2020; invited talk.    Applied and Computational Mathematics Seminar; Cardiff, 29 October 2019; seminar talk.    MACM International Conference CoMFoS19: Mathematical Aspects of Continuum Mechanics; Kanazawa, Japan 15 - 16 July 2019; invited talk; conference website.</description>
     </item>
     
     <item>
@@ -34,7 +34,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/publications/</guid>
-      <description>[5]   M.&amp;nbsp;Buze and J.&amp;nbsp;R. Kermode. A numerical-continuation-enhanced flexible boundary condition scheme applied to Mode I and Mode III fracture. arXiv e-prints, 2008.12822, 2020. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [4]   M.&amp;nbsp;Buze. Atomistic modelling of near-crack-tip plasticity. arXiv e-prints, 2007.02408, 2020. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [3]   M.&amp;nbsp;Buze, T.&amp;nbsp;Hudson, and C.&amp;nbsp;Ortner. Analysis of cell size effects in atomistic crack propagation. ESAIM: Mathematical Modelling and Numerical Analysis, 54(6):1821--1847, 2020.</description>
+      <description>[5]   M.&amp;nbsp;Buze and J.&amp;nbsp;R. Kermode. Numerical-continuation-enhanced flexible boundary condition scheme applied to mode-i and mode-iii fracture. Phys. Rev. E, 103:033002, Mar 2021. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [4]   M.&amp;nbsp;Buze. Atomistic modelling of near-crack-tip plasticity. arXiv e-prints, 2007.02408, 2020. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [3]   M.&amp;nbsp;Buze, T.&amp;nbsp;Hudson, and C.&amp;nbsp;Ortner. Analysis of cell size effects in atomistic crack propagation. ESAIM: Mathematical Modelling and Numerical Analysis, 54(6):1821--1847, 2020.</description>
     </item>
     
     <item>
@@ -43,7 +43,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/research/</guid>
-      <description>My current main research interest concerns developing a mathematically rigorous theory of fracture at an atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
+      <description>My current main research interest concerns developing a mathematically rigorous theory of fracture at the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
     </item>
     
     <item>

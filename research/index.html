@@ -150,7 +150,7 @@
     <div align="start" class="content"><br>
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-<img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> My current main research interest concerns developing a mathematically rigorous theory of fracture at an atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
+<img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> My current main research interest concerns developing a mathematically rigorous theory of fracture at the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
 </p>
 <p>
 The atomistic scale is known to lie at the heart of fracture, with cracks propagating via atomistic mechanisms involving breaking interaction bonds between individual atoms. If one zooms in on a crack tip, firstly it leads to a simplified geometry and then the atomistic structure is revealed, as illustrated below. 
@@ -197,11 +197,11 @@ The work in <a href="/publications/#2020-crack-physics">[5]</a> looks at practic
 It is hoped that more accurate NCFlex-type schemes can be systematically derived by marrying this approach with the idea of <em>development of solutions</em> first proposed in <a href="/publications/#2017-bcscrew">[1]</a>, which entails prescribing a more accurate continuum predictor.
 </p>
 <p>
-The NCFlex scheme applied to two realistic models of silicon yields the paths of equilibrium configurations shown below, which reveals subtle qualitative difference at the unstable segments of the equilibrium paths that would be near impossible to capture in methods known to date. 
+The NCFlex scheme applied to two realistic models of silicon yields the paths of equilibrium configurations shown below, which reveals subtle qualitative difference at the unstable segments of the equilibrium paths that would be near impossible to capture with methods known to date. 
 </p>
 </div>
 <img src="/ncflex2.jpg" width="700">
-<h3 id="atomistic-near-crack-tip-plasticity">Atomistic near-crack-tip plasticity</h3>
+<h3 id="atomistic-and-mesoscale-near-crack-tip-plasticity">Atomistic and mesoscale near-crack-tip plasticity</h3>
 <div style="text-align:justify; text-justify: inter-word">
 In ductile fracture, the stresses near the crack tip lead to a build up of topological defects known as dislocations, carriers of plastic deformation, which can potentially shield the material from further crack propagation. 
 <p>In a recent independent endeavour <a href="/publications/#2020-near-crack-tip-pas">[4]</a>, I have introduced a novel geometric and functional framework of the <em>lattice manifold complex</em>, in which a cracked crystalline material is described by a CW complex structure defined on the Riemann surface
@@ -214,13 +214,13 @@ corresponding to the complex square root mapping. The essence of the constructio
 <img src="/duality.png" width="700">
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack opening and a finite number of dislocations are present. This unlocks a number of possible further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale. 
+Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack opening and a finite number of dislocations are present. This has unlocked a number of further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale, as well the study of equilibria in the upscaled representation, which is the most relevant scale to the problem. More on that will appear here as the work progresses. 
 </p>
 </div>
-<h3 id="stochastic-approaches-to-atomistic-fracture">Stochastic approaches to atomistic fracture</h3>
+<h3 id="stochastic-approaches-to-atomistic-material-modelling">Stochastic approaches to atomistic material modelling</h3>
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-In my capacity as a Research Associate at Cardiff University, I am working with Dr Angela Mihai on incorporating stochasticity into the modelling of atomistic fracture, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. 
+In my capacity as a Research Associate at Cardiff University, I am working with Dr Angela Mihai and Dr Thomas Woolley on a new information-theoretic stochastic approach to atomistic material modelling, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. We first employ this new framework to study atomistic fracture from a stochastic point of view.
 </p>
 <p>
 As an illustration, consider the simplified case of Mode III fracture under antiplane displacements \(y(m)~=~(0,0, y_3(m)),\,\forall m \in \Lambda\) with energy (morally) of the form
@@ -235,16 +235,16 @@ If \(\phi\) is of the form
 $$
 \phi(r) = \alpha\left(1-\exp(-\beta r^2)\right),
 $$
-then it is of interest to understand how an inherent uncertainty in the choice of \(\alpha\) and \(\beta\) propagates to uncertaintities in the key quantities describing atomistic crack propagation, namely \(K_{\rm c}\) and \( (K_-,K_+)\). A plot of functions \(\phi\) for different parameter choices (with mean highlighted) can be seen to the right. 
+then it is of interest to understand how an inherent uncertainty in the choice of \(\alpha\) and \(\beta\) propagates to uncertaintities in the key quantities describing atomistic crack propagation, namely \(K_{\rm c}\) and \( (K_-,K_+)\) (as discussed in the section on atomistic brittle fracture above). A plot of functions \(\phi\) for different parameter choices (with mean highlighted) can be seen to the right. 
 </p>
 <p>
-The choice of parameters has to be such that the notion of <em>lattice stability</em> is satisfied, which implies that both parameters should follow Gamma distribution. A direct calculation possible in this simple scenario then reveals that \(K_{\rm c} = C \beta^{-1/2}\) for some crystalline-structure-dependent known constant \(C\), thus revealing the propagation of uncertainties, as can be seen in a histogram plot below.
+The choice of parameters has to be such that the notion of <em>lattice stability</em> is satisfied, which, when fed into the Maximum Entropy Principle framework, implies that both parameters should follow Gamma distribution. A direct calculation possible in this simple scenario then reveals that \(K_{\rm c} = C \beta^{-1/2}\) for some crystalline-structure-dependent known constant \(C\), thus revealing the propagation of uncertainties, as can be seen in a histogram plot below.
 </p>
 </div>
 <img src="/distr_example.png" width="700">
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-The ongoing work is to formalise a general maximum-entropy-principle-based framework for uncertainty quantification in atomistic fracture, including accounting for the phenomenon of lattice trapping.
+The ongoing work is about formalising a general maximum-entropy-principle-based framework for uncertainty quantification in atomistic material modelling and, in the particular case of fracture, accounting for the phenomenon of lattice trapping.
 </p>
 <h2 id="collaborators">Collaborators:</h2>
 <div>
@@ -252,7 +252,7 @@ The ongoing work is to formalise a general maximum-entropy-principle-based frame
   <dd>
     <ul class="list-unstyled">
       <li><strong>University of Warwick, UK</strong>:</li>
-      <li><a href="https://warwick.ac.uk/fac/sci/maths/people/staff/braun/"> Julian Braun</a>, <a href="https://warwick.ac.uk/fac/sci/wcpm/people/pgrigorev/"> Petr Grigorev</a>, <a href="https://sites.google.com/site/thudso/"> Thomas Hudson</a> (PhD advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
+      <li><a href="https://warwick.ac.uk/fac/sci/maths/people/staff/braun/"> Julian Braun</a>, <a href="https://sites.google.com/site/thudso/"> Thomas Hudson</a> (PhD advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
     </ul>
   </dd>
 <dd>
@@ -279,14 +279,25 @@ The ongoing work is to formalise a general maximum-entropy-principle-based frame
       <li><a href="https://sites.google.com/site/masatowebe/home"> Masato Kimura</a>, <a href="https://sites.google.com/site/pjpvmeurs/"> Patrick van Meurs</a>.</li>
     </ul>
   </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>University of Warwick, UK</strong>:</li>
+      <li><a href="https://warwick.ac.uk/fac/sci/maths/people/staff/braun/"> Julian Braun</a>, <a href="https://sites.google.com/site/thudso/"> Thomas Hudson</a> (PhD advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
+    </ul>
+  </dd>
+  <dd>
+   <ul class="list-unstyled">
+      <li><strong>CINaM, Marseille, France</strong>:</li>
+      <li><a href="https://pgrigorev.github.io/">Petr Grigorev</a>.</li>
+    </ul>
+  </dd>
 </dl>
-</div>
-</div>
+</div></div>
 
 </main>
 
         <footer>
-            <p class="copyright text-muted">© 2020 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
+            <p class="copyright text-muted">© 2021 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
         </footer>
 
         
