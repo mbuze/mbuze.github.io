@@ -5,18 +5,14 @@
     <link>https://mbuze.github.io/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language>
-    
-	<atom:link href="https://mbuze.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-gb</language><atom:link href="https://mbuze.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Curriculum Vitae</title>
       <link>https://mbuze.github.io/cv/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/cv/</guid>
-      <description>Career and Education  2022 - Present  Research Fellow at School of Mathematics, University of Birmingham, UK; working on an EPSRC-funded project about analysis of evolutionary PDEs as gradient flows arising from Optimal Transportation Theory with Dr Hong Duong;  organising the Reading Group on Mathematics of Data Science (see Events).   2019 - 2022  Research Associate at School of Mathematics, Cardiff University, UK; working on an EPSRC-funded project about stochastic elasticity with Dr Angela Mihai;  organising the Applied and Computational Mathematics Seminar in 2020/2021 and 2021/2022 (see YouTube channel).</description>
+      <description>Career and Education  2023 - Present  Research Associate at School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK; working on several EPSRC-funded projects about mathematical theory of polycrystalline materials with Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.   2022 - 2023  Research Fellow at School of Mathematics, University of Birmingham, UK; working on an EPSRC-funded project about analysis of evolutionary PDEs as gradient flows arising from Optimal Transportation Theory with Dr Hong Duong;  organising the Reading Group on Mathematics of Data Science (see Events).</description>
     </item>
     
     <item>
@@ -25,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>Uncertainty quantification and stochastic modelling of materials; Cambridge, 10 July 2023 - 1 September 2023; A research programme at Isaac Newton Institute for Mathematical Sciences; website.    Computational Methods in Applied Mathematics (CMAM 2022); Vienna, 29 August - 2 September 2022; speaker at Minisymposium: Multiscale methods for materials and molecules; conference website.     Error control in first-principles modelling; CECAM-HQ-EPFL, Lausanne, Switzerland, 20-24 June 2022; CECAM flagship workshop, invited talk; website.</description>
+      <description>Uncertainty quantification and stochastic modelling of materials; Cambridge, UK, 10 July 2023 - 1 September 2023; A research programme at Isaac Newton Institute for Mathematical Sciences; website.    New Mathematics for the Exascale: Applications to Materials Science; UCLA, Los Angeles, USA, 13 March - 16 June 2023; A research programme at Institute for Pure &amp; Applied Mathematics (IPAM); website.    Research visit to Laboratoire de Mathématiques de Besançon (Université Bourgogne Franche-Comté); Besançon, France, 7-11 November 2022; hosted by Geneviève Dusson; research topic: uncertainty quantification for interatomic potentials.</description>
     </item>
     
     <item>
@@ -43,7 +39,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/research/</guid>
-      <description>Collaborators:   University of Birmingham, UK: Hong Duong (postdoctoral mentor).    Cardiff University, UK: Angela Mihai (former postdoctoral mentor), Thomas Woolley.    Heriot-Watt University, UK: Julian Braun.    University of British Columbia, Canada: Christoph Ortner (PhD advisor).    Kanazawa University, Japan: Masato Kimura, Patrick van Meurs.    University of Warwick, UK: Thomas Hudson (PhD advisor), James Kermode.    CINaM, Marseille, France: Petr Grigorev.</description>
+      <description>Collaborators:   Université Bourgogne Franche-Comté, France: Geneviève Dusson.    University of Birmingham, UK Hong Duong (former postdoctoral mentor)    Cardiff University, UK: Angela Mihai (former postdoctoral mentor), Thomas Woolley    University of Glasgow, UK: Steven Roper    Heriot-Watt University, UK: John Ball (postdoctoral mentor), David Bourne (postdoctoral mentor), Julian Braun, Lucia Scardia (postdoctoral mentor)    University of British Columbia, Canada: Christoph Ortner (PhD advisor).</description>
     </item>
     
     <item>
@@ -52,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/teaching/</guid>
-      <description>Teaching at Birmingham No teaching commitments at present. Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.  2016/2017  Teaching Assistant, Term 1; modules: MA258 Mathematical Analysis III, ST208 Mathematical Methods.</description>
+      <description>Teaching at Heriot-Watt No teaching commitments at present. Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.  2016/2017  Teaching Assistant, Term 1; modules: MA258 Mathematical Analysis III, ST208 Mathematical Methods.</description>
     </item>
     
   </channel>

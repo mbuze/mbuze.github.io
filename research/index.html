@@ -67,7 +67,7 @@
 
 
 <script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
- <meta name="generator" content="Hugo 0.68.3" />
+ <meta name="generator" content="Hugo 0.98.0" />
         
 
         
@@ -163,21 +163,33 @@
 <div>
 <dl class="dl-horizontal3">
 <dd>
+   <ul class="list-unstyled">
+      <li><strong>Université Bourgogne Franche-Comté, France</strong>:</li>
+      <li><a href="https://gdusson.perso.math.cnrs.fr/">Geneviève Dusson</a>.</li>
+    </ul>
+</dd>
+<dd>
     <ul class="list-unstyled">
-      <li><strong>University of Birmingham, UK</strong>:</li>
-      <li><a href="https://sites.google.com/site/duonghongmath/"> Hong Duong</a> (postdoctoral mentor).</li>
+      <li><strong>University of Birmingham, UK</strong></li>
+      <li><a href="https://sites.google.com/site/duonghongmath/"> Hong Duong</a> (former postdoctoral mentor)</li>
     </ul>
   </dd>
 <dd>
     <ul class="list-unstyled">
       <li><strong>Cardiff University, UK</strong>:</li>
-      <li><a href="https://www.cardiff.ac.uk/people/view/98660-mihai-angela"> Angela Mihai</a> (former postdoctoral mentor), <a href="https://thomaswoolley.co.uk/"> Thomas Woolley</a>.</li>
+      <li><a href="https://www.cardiff.ac.uk/people/view/98660-mihai-angela"> Angela Mihai</a> (former postdoctoral mentor), <a href="https://thomaswoolley.co.uk/"> Thomas Woolley</a></li>
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>University of Glasgow, UK</strong>:</li>
+      <li><a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/stevenroper/"> Steven Roper</a></li>
     </ul>
   </dd>
   <dd>
     <ul class="list-unstyled">
       <li><strong>Heriot-Watt University, UK</strong>:</li>
-      <li><a href="http://www.macs.hw.ac.uk/~jb2055/"> Julian Braun</a>.</li>
+      <li><a href="https://researchportal.hw.ac.uk/en/persons/john-ball"> John Ball</a> (postdoctoral mentor), <a href="http://www.macs.hw.ac.uk/~db92/">David Bourne</a> (postdoctoral mentor), <a href="http://www.macs.hw.ac.uk/~jb2055/">Julian Braun</a>, <a href="http://www.macs.hw.ac.uk/~ls121/">Lucia Scardia</a> (postdoctoral mentor)</li>
     </ul>
   </dd>
   <dd>
@@ -198,56 +210,16 @@
       <li><a href="https://sites.google.com/view/thudso/"> Thomas Hudson</a> (PhD advisor), <a href="https://warwick.ac.uk/fac/sci/eng/staff/jrk/"> James Kermode</a>.</li>
     </ul>
   </dd>
-  <dd>
-   <ul class="list-unstyled">
-      <li><strong>CINaM, Marseille, France</strong>:</li>
-      <li><a href="https://pgrigorev.github.io/">Petr Grigorev</a>.</li>
-    </ul>
-  </dd>
 </dl>
 </div>
-<h3 id="analysis-of-pdes">Analysis of PDEs</h3>
-<div style="text-align:justify; text-justify: inter-word">
-In my capacity as a Research Fellow at University of Birmingham, I am working with Dr Hong Duong on the analysis of evolutionary partial differential equations of a general form 
-<p>$$
-\partial_t \rho+ \mathcal{A} \rho=\mathcal{D}\rho + \mathcal{R}\rho, \quad \rho(0)=\rho_0,
-$$
-where</p>
-<ul>
-<li>$\mathcal{A}\rho$ is the conservative part, e.g. $\mathcal{A}\rho = {\rm div}(\rho b[\rho])[$ where $b$ is divergence-free;</li>
-<li>$\mathcal{D}\rho$ is the dissipative part, e.g. of the form $\mathcal{D}\rho = {\rm div}(\rho {\rm A} \nabla \partial \mathcal{F}_1)$;</li>
-<li>$\mathcal{R}\rho$ is the reaction part, e.g. $\mathcal{R}\rho = \rho \partial \mathcal{F}_2$;</li>
-<li>$\mathcal{F}_1, \mathcal{F}_2$ are (potentially distinct) free energies, typically of the form
-$$\begin{equation}
-\mathcal{F}_i(\rho) := \begin{cases}
-\int U_i(\rho(x)) + V_i(x)\rho(x) dx,\quad &amp;\text{if } \rho \ll \mathcal{L}^n, \newline
-+\infty,\quad &amp;\text{otherwise.}
-\end{cases}
-\end{equation}$$
-The canonical choice for the internal energy $U$ is the negative Boltzmann entropy $U(\rho) = \rho \log \rho$.</li>
-</ul>
-<p>We wish to focus on the class where $\mathcal{R}\rho \neq 0$ and consider a class of (Entropy) Regularised Minimizing Movement schemes</p>
-<p>$$
-\rho^k \in {\rm argmin }\text{ } J^k(\nu, \rho^{k-1}),
-$$
-where for each $k$, the functional $J^k$ is of the form
-$$
-J_{D,\mathcal{F},\varepsilon}(\mu,\nu) := D_{\varepsilon}^2(\mu,\nu) + 2h \mathcal{F}(\mu)
-$$
-where $D$ is a setup-specific distance (chiefly either Wasserstein, Fisher-Rao or Hellinger-Kantorovich), $D_{\varepsilon}$ is its (entropic) regularisation, $h$ is the discrete time step. Note that $D$ and $\mathcal{F}$ can differ for different $k$.</p>
-<p>
-A concrete topic concerns deriving a consistent static formulation of the entropy regularisation of the Hellinger-Kantorovitch distance, starting from its dynamic definition 
-$$\begin{align}
-{\mathrm{HK}}^2_{\varepsilon}(\mu,\nu):= \inf_{\rho, v, r}\Big( \int \int_0^1 (|v|^2 + |r|^2) \rho(x) dxdt\quad  \Big| \quad &\partial_t \rho + {\rm div}(\rho v) = \frac{\varepsilon}{2} \Delta \rho + \rho r,\newline 
-&\rho|_{t=0} = \mu, \rho|_{t=T} =\nu \Big).
-\end{align}$$
-</p>
-</div>
-<h3 id="mathematics-of-materials-science">Mathematics of Materials Science:</h3>
+<br>
+<h3 id="mathematical-aspects-of-materials-science">Mathematical aspects of materials science</h3>
+<br>
+<h4 id="uatomistic-fractureu"><u>Atomistic fracture</u></h4>
 <br>
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-<img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> My main research interest concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
+<img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
 </p>
 <p>
 The atomistic scale is known to lie at the heart of fracture, with cracks propagating via atomistic mechanisms involving breaking interaction bonds between individual atoms. If one zooms in on a crack tip, firstly it leads to a simplified geometry and then the atomistic structure is revealed, as illustrated below. 
@@ -297,7 +269,7 @@ It is hoped that more accurate NCFlex-type schemes can be systematically derived
 The NCFlex scheme applied to two realistic models of silicon yields the paths of equilibrium configurations shown below, which reveals subtle qualitative difference at the unstable segments of the equilibrium paths that would be near impossible to capture with methods known to date. 
 </p>
 </div>
-<img src="/ncflex2.jpg" width="700">
+<img vspace="20" src="/ncflex2.jpg" width="700">
 <h4 id="atomistic-and-mesoscale-near-crack-tip-plasticity">Atomistic and mesoscale near-crack-tip plasticity</h4>
 <div style="text-align:justify; text-justify: inter-word">
 In ductile fracture, the stresses near the crack tip lead to a build up of topological defects known as dislocations, carriers of plastic deformation, which can potentially shield the material from further crack propagation. 
@@ -311,13 +283,17 @@ corresponding to the complex square root mapping. The essence of the constructio
 <img src="/duality.png" width="700">
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack opening and a finite number of dislocations are present. This has unlocked a number of further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale, as well the study of equilibria in the upscaled representation, which is the most relevant scale to the problem. More on that will appear here as the work progresses. 
+Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack opening and a finite number of dislocations are present. This has unlocked a number of further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale, as well the study of equilibria in the upscaled representation, which is the most relevant scale to the problem. 
 </p>
 </div>
-<h4 id="stochastic-approaches-to-atomistic-material-modelling">Stochastic approaches to atomistic material modelling</h4>
+<br>
+<br>
+<h4 id="ustochastic-approaches-to-atomistic-material-modellingu"><u>Stochastic approaches to atomistic material modelling</u></h4>
+<br>
+<h4 id="maximum-entropy-priors">Maximum Entropy priors</h4>
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-In my capacity as a Research Associate at Cardiff University, I am working with Dr Angela Mihai and Dr Thomas Woolley on a new information-theoretic stochastic approach to atomistic material modelling, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. We first employ this new framework to study atomistic fracture from a stochastic point of view.
+In my capacity as a Research Associate at Cardiff University, I have worked with Dr Angela Mihai and Dr Thomas Woolley on a new information-theoretic stochastic approach to atomistic material modelling, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. We first employ this new framework to study atomistic fracture from a stochastic point of view.
 </p>
 <p>
 As an illustration, consider the simplified case of Mode III fracture under antiplane displacements \(y(m)~=~(0,0, y_3(m)),\,\forall m \in \Lambda\) with energy (morally) of the form
@@ -341,14 +317,31 @@ The choice of parameters has to be such that the notion of <em>lattice stability
 <img src="/distr_example.png" width="700">
 <div style="text-align:justify; text-justify: inter-word">
 <p>
-The ongoing work is about formalising a general maximum-entropy-principle-based framework for uncertainty quantification in atomistic material modelling and, in the particular case of fracture, accounting for the phenomenon of lattice trapping.
+<p>See our paper <a href="/publications/#BWM2022">[6]</a> for a full exposition of this work.</p>
+</div>
+<br>
+<h4 id="uncertainty-quantification-for-interatomic-potentials">Uncertainty quantification for interatomic potentials</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p>Expanding on the work outlined above, I am currently working with Geneviève Dusson (see collaborators above) on formalising a more general maximum-entropy-principle-based framework for uncertainty quantification in atomistic material modelling   and to compare it with currently available approaches.</p>
 </p>
+</div>
+<br>
+<br>
+<h4 id="ugeometric-modelling-of-polycrystalline-materialsu"><u>Geometric modelling of polycrystalline materials</u></h4>
+<div style="text-align:justify; text-justify: inter-word">
+In my capacity as a Research Associate at Heriot-Watt University, I am working with David Bourne and Steven Roper on efficient generation of artificial microstructure with desirable properties related to size, location and aspect ratio of constitutive grains. We are using tools from Optimal Transport theory to do so and are currently looking at combining them with numerical continuation methods. 
+</div>
+<br>
+<h3 id="optimal-transport-theory">Optimal transport theory</h3>
+<div style="text-align:justify; text-justify: inter-word">
+Moving temporarily away from the realm of materials science research, in my capacity as a Research Fellow at University of Birmingham, I have worked (and continute to work) with Dr Hong Duong on the analysis of entropic regularisation of unbalanced optimal transportation (UOT) problems. We have obtained several results concerning different ways in which one can entropy-regularise a UOT problem, the connections between them and convergence results as the regularisation parameter vanishes. We are hoping to publish a paper on this at some point in 2023. More details to follow. 
+</div>
 </div>
 
 </main>
 
         <footer>
-            <p class="copyright text-muted">© 2022 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
+            <p class="copyright text-muted">© 2023 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
         </footer>
 
         
