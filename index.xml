@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://mbuze.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    
+	<atom:link href="https://mbuze.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://mbuze.github.io/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/cv/</guid>
+      <description>Career and Education  2022 - Present  Research Fellow at School of Mathematics, University of Birmingham, UK; working on an EPSRC-funded project about analysis of evolutionary PDEs as gradient flows arising from Optimal Transportation Theory with Dr Hong Duong;  organising the Reading Group on Mathematics of Data Science (see Events).   2019 - 2022  Research Associate at School of Mathematics, Cardiff University, UK; working on an EPSRC-funded project about stochastic elasticity with Dr Angela Mihai;  organising the Applied and Computational Mathematics Seminar in 2020/2021 and 2021/2022 (see YouTube channel).</description>
+    </item>
+    
+    <item>
+      <title>Events</title>
+      <link>https://mbuze.github.io/events/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/events/</guid>
+      <description>Uncertainty quantification and stochastic modelling of materials; Cambridge, 10 July 2023 - 1 September 2023; A research programme at Isaac Newton Institute for Mathematical Sciences; website.    Computational Methods in Applied Mathematics (CMAM 2022); Vienna, 29 August - 2 September 2022; speaker at Minisymposium: Multiscale methods for materials and molecules; conference website.     Error control in first-principles modelling; CECAM-HQ-EPFL, Lausanne, Switzerland, 20-24 June 2022; CECAM flagship workshop, invited talk; website.</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>https://mbuze.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/publications/</guid>
+      <description>[6]   M.&amp;nbsp;Buze, T.E. Woolley, and L.A.Mihai. A stochastic framework for atomistic fracture. SIAM Journal on Applied Mathematics, 82(2):526--548, March 2022. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [5]   M.&amp;nbsp;Buze and J.&amp;nbsp;R. Kermode. Numerical-continuation-enhanced flexible boundary condition scheme applied to mode-i and mode-iii fracture. Phys. Rev. E, 103:033002, Mar 2021. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [4]   M.&amp;nbsp;Buze. Atomistic modelling of near-crack-tip plasticity. Nonlinearity, 34(7):4503--4542, June 2021.</description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://mbuze.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/</guid>
+      <description>Collaborators:   University of Birmingham, UK: Hong Duong (postdoctoral mentor).    Cardiff University, UK: Angela Mihai (former postdoctoral mentor), Thomas Woolley.    Heriot-Watt University, UK: Julian Braun.    University of British Columbia, Canada: Christoph Ortner (PhD advisor).    Kanazawa University, Japan: Masato Kimura, Patrick van Meurs.    University of Warwick, UK: Thomas Hudson (PhD advisor), James Kermode.    CINaM, Marseille, France: Petr Grigorev.</description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>https://mbuze.github.io/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/teaching/</guid>
+      <description>Teaching at Birmingham No teaching commitments at present. Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.  2016/2017  Teaching Assistant, Term 1; modules: MA258 Mathematical Analysis III, ST208 Mathematical Methods.</description>
+    </item>
+    
+  </channel>
+</rss>

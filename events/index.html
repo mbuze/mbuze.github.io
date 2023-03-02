@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Events</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: black;
+	--accentt: #386cb0;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="https://mbuze.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.68.3" />
+        
+
+        
+
+	
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+	
+
+        
+
+        
+
+
+	<meta name="google-site-verification" content="Ht7zuOyitBeZHNWE8k2gYEauL2XvMIzuGvgPo3bbYgU" />
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><b>Maciej Buze</b></a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/cv/">CV</a></li>
+                            
+                                <li><a href="/research/">Research</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/events/">Events</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:m.buze@bham.ac.uk"><i class="far fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/mbuze/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://orcid.org/0000-0001-8617-974X"><i class="fab fa-orcid"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.researchgate.net/profile/Maciej_Buze"><i class="fab fa-researchgate"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.com/citations?user=7Hh7IaAAAAAJ&amp;hl=en&amp;oi=ao"><i class="fab fa-google"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Events</h2>
+        <h5>Conferences, research visits, talks, reading groups</h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><div>
+<dl class="dl-horizontal3">
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Uncertainty quantification and stochastic modelling of materials</strong>;</li>
+      <li>Cambridge, 10 July 2023 - 1 September 2023;</li> 
+      <li>A research programme at Isaac Newton Institute for Mathematical Sciences</i>;</li>
+             <li><a href="https://www.newton.ac.uk/event/usm/">website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Computational Methods in Applied Mathematics (CMAM 2022)</strong>;</li>
+      <li>Vienna, 29 August - 2 September 2022;</li> 
+      <li>speaker at Minisymposium: <i>Multiscale methods for materials and molecules</i>;</li>
+             <li><a href="https://www.asc.tuwien.ac.at/cmam2022/?id=cmam2020"> conference website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong> Error control in first-principles modelling</strong>;</li>
+      <li>CECAM-HQ-EPFL, Lausanne, Switzerland, 20-24 June 2022;</li> 
+      <li>CECAM flagship workshop, invited talk;</li>
+             <li><a href="https://www.cecam.org/workshop-details/1115">website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Polycrystals: Microstructure and Plasticity</strong>;</li>
+      <li>Edinburgh, 19-22 April 2022;</li> 
+             <li><a href="https://www.icms.org.uk/workshops/2022/polycrystals-microstructure-and-plasticity"> workshop website</a>.</li> 
+    </ul>
+  </dd>
+   <dd>
+    <ul class="list-unstyled">
+      <li><strong>Reading Group on Mathematics of Data Science, University of Birmingham</strong>;</li>
+      <li>Birmingham, on-going from February 2022;</li>
+      <li>first topic: Entropic Optimal Transport;</li>
+                   <li><a href="https://sites.google.com/site/duonghongmath/activities/reading-group-on-mathematics-of-data-science">website</a>.</li> 
+    </ul>
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Applied Mathematics Seminar, University of Birmingham</strong>;</li>
+      <li>Birmingham, 12 February 2022;</li>
+      <li>seminar talk.</li>
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Fluids and Materials Seminar, University of Bristol</strong>;</li>
+      <li>online, 3 February 2022;</li>
+             <li><a href="https://www.bristolmathsresearch.org/seminar/maciej-buze/"> seminar talk</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Elasticity Day 2021</strong>;</li>
+      <li>online, 21st-22nd April 2021;</li> 
+      <li>organised by Isaac Newton Institute for Mathematical Sciences.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Münster Winterschool on Analysis and Applied Mathematics</strong>;</li>
+      <li>online, 22-26 February 2021;</li> 
+             <li><a href="https://www.uni-muenster.de/MathematicsMuenster/events/2021/winterschool-analysis.shtml"> workshop website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>IMSI Mathematical and Computational Materials Science Workshop</strong>;</li>
+      <li>online, 15-19 February 2021;</li> 
+             <li><a href="https://www.imsi.institute/materials-science/"> workshop website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Warwick-Jiaotong Workshop: QM/MM methods and other multi-scale boundary conditions for atomistic material simulation</strong>;</li>
+      <li>online, 22 June 2020;</li>
+      <li>invited talk.</li> 
+    </ul>
+  </dd>
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>Applied and Computational Mathematics Seminar, Cardiff University</strong>;</li>
+      <li>Cardiff, 29 October 2019;</li>
+      <li>seminar talk.</li> 
+    </ul>
+  </dd>  
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>MACM International Conference CoMFoS19: Mathematical Aspects of Continuum Mechanics</strong>;</li>
+      <li>Kanazawa, Japan 15 - 16 July 2019;</li>
+      <li>invited talk;</li>
+      <li><a href="https://sites.google.com/view/comfos19/"> conference website</a>.</li> 
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Research visit to Kanazawa University;</strong></li>
+      <li>Japan, 13 June - 19 July 2019;</li>
+      <li>hosted by <a href="https://sites.google.com/site/masatowebe/home">Prof. M. Kimura</a> and <a href="https://sites.google.com/site/pjpvmeurs/">Dr P. van Meurs</a>;</li>
+      <li>research topic: <i>bottom-up approaches to near-crack-tip plasticity</i>.</li>
+    </ul>
+  </dd>
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>SIAM Conference on Computational Science and Engineering (CSE19)</strong>;</li>
+      <li>Spokane, Washington, USA, 25 February - 1 March 2019;</li>
+      <li>speaker at a Minisymposium: <i>Multiphysics and Multiscale Problems in Computational Science and Engineering</i>;</li>
+      <li><a href="https://www.siam.org/conferences/cm/conference/cse19"> conference website</a>.</li> 
+    </ul>
+  </dd>
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>The 12th AIMS Conference on Dynamical Systems, Differential Equations and Applications</strong>;</li>
+      <li>Taipei, Taiwan, 5 - 9  July 2018;</li>
+      <li>speaker at a Special Session: <i>Mathematics and Materials: Models and Applications</i>;</li>
+      <li><a href="https://aimsconference.org/conferences/2018/index.html"> conference website</a>.</li> 
+    </ul>
+  </dd>  
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>Coagulation-Fragmentation Equations and Semigroups: A meeting in Honour of Wilson Lamb</strong>;</li>
+      <li>Glasgow, UK, 23 May 2018;</li>
+      <li><a href="https://www.strath.ac.uk/science/mathematicsstatistics/smart/wlambworkshop/">conference website</a>.</li> 
+    </ul>
+  </dd>  
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>Nonlinear analysis and the physical and biological sciences (in honour of Jack Carr)</strong>;</li>
+      <li>Edinburgh, UK, 21 - 22 May 2018;</li>
+      <li><a href="https://www.icms.org.uk/nonlinearanalysis.php">workshop website</a>.</li> 
+    </ul>
+  </dd>  
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>Warwick EPSRC Symposium: Density Functional Theory and Beyond: Analysis and Computation</strong>;</li>
+      <li>Coventry, UK, 3 - 7 July 2017;</li>
+      <li><a href="https://warwick.ac.uk/fac/sci/maths/research/events/2016-17/symposium/dftac/">conference website</a>.</li> 
+    </ul>
+  </dd>  
+<dd>
+    <ul class="list-unstyled">
+      <li><strong>INdAM Workshop on Innovative Mathematical Models and Methods for Industrial Applications</strong>;</li>
+      <li>Rome, Italy, 15 - 19 May 2017;</li>
+      <li><a href="http://congressi.iac.cnr.it/mathtech-mind2017">conference website</a>.</li> 
+    </ul>
+  </dd>  
+  <dd>
+    <ul class="list-unstyled">
+      <li><strong>Joint CDT Colloquium</strong>;</li>
+      <li>Edinburgh, UK, 18 - 21 April 2017;</li>
+      <li>speaker;</li>
+      <li><a href="http://www.maxwell.ac.uk/migsaa/news/migsaa-hosts-joint-cdt-colloquium-18th-21st-april-2017">more info</a>.</li> 
+    </ul>
+  </dd>  
+</dl>
+</div>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© 2022 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</html>
+
