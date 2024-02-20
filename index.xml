@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>Uncertainty quantification and stochastic modelling of materials; Cambridge, UK, 10 July 2023 - 1 September 2023; A research programme at Isaac Newton Institute for Mathematical Sciences; website.    New Mathematics for the Exascale: Applications to Materials Science; UCLA, Los Angeles, USA, 13 March - 16 June 2023; A research programme at Institute for Pure &amp; Applied Mathematics (IPAM); website.    Research visit to Laboratoire de Mathématiques de Besançon (Université Bourgogne Franche-Comté); Besançon, France, 7-11 November 2022; hosted by Geneviève Dusson; research topic: uncertainty quantification for interatomic potentials.</description>
+      <description>Maxwell Analysis Day; ICMS, Edinburgh, UK, 27 March 2024; A half-day event bringing together the HW and UoE analysis groups; organiser on behalf of HW.    Workshop on Optimal Transport, Humboldt University of Berlin; Berlin, Germany, 11 - 15 March 2024; poster presentation; website.    Centre for Mathematical Imaging Techniques Seminar, University of Liverpool; Liverpool, UK, 28 February 2024; seminar talk.    Analysis Seminar, University of Strathclyde; Glasgow, 5 December 2023.</description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/publications/</guid>
-      <description>[6]   M.&amp;nbsp;Buze, T.E. Woolley, and L.A.Mihai. A stochastic framework for atomistic fracture. SIAM Journal on Applied Mathematics, 82(2):526--548, March 2022. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [5]   M.&amp;nbsp;Buze and J.&amp;nbsp;R. Kermode. Numerical-continuation-enhanced flexible boundary condition scheme applied to mode-i and mode-iii fracture. Phys. Rev. E, 103:033002, Mar 2021. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [4]   M.&amp;nbsp;Buze. Atomistic modelling of near-crack-tip plasticity. Nonlinearity, 34(7):4503--4542, June 2021.</description>
+      <description>[9]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations. arXiv e-prints, 2402.11268, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [8]   PyAPD: A Python library for computing anisotropic power diagrams using GPU acceleration, 2023. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;]   [7]   M.&amp;nbsp;Buze and M.H. Duong. Entropic regularisation of unbalanced optimal transportation problems. arXiv e-prints, 2305.02410, 2023. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [6]   M.&amp;nbsp;Buze, T.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/teaching/</guid>
-      <description>Teaching at Heriot-Watt No teaching commitments at present. Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.  2016/2017  Teaching Assistant, Term 1; modules: MA258 Mathematical Analysis III, ST208 Mathematical Methods.</description>
+      <description>Teaching at Heriot-Watt 2023/2024   Lecturer for F17XB Mathematics for Engineers and Scientists 2; A big service course for 500+ students across three campuses.    Guest Lecturer for F17CB Calculus B;     Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.</description>
     </item>
     
   </channel>
