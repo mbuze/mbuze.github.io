@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://mbuze.github.io/research/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language><atom:link href="https://mbuze.github.io/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mathematical aspects of materials science</title>
+      <link>https://mbuze.github.io/research/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/materials/</guid>
+      <description>Atomistic fracture  One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
+    </item>
+    
+    <item>
+      <title>Optimal transport theory</title>
+      <link>https://mbuze.github.io/research/ot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/ot/</guid>
+      <description>This page is under construction. The relevant publications are [7], [9] and [10].</description>
+    </item>
+    
+  </channel>
+</rss>

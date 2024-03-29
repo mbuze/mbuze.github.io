@@ -21,7 +21,25 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>Maxwell Analysis Day; ICMS, Edinburgh, UK, 27 March 2024; A half-day event bringing together the HW and UoE analysis groups; organiser on behalf of HW.    Workshop on Optimal Transport, Humboldt University of Berlin; Berlin, Germany, 11 - 15 March 2024; poster presentation; website.    Centre for Mathematical Imaging Techniques Seminar, University of Liverpool; Liverpool, UK, 28 February 2024; seminar talk.    Analysis Seminar, University of Strathclyde; Glasgow, 5 December 2023.</description>
+      <description>Maxwell Analysis Day; ICMS, Edinburgh, UK, 27 March 2024; A half-day event bringing together the HW and UoE analysis groups; organiser on behalf of HW. website.    Workshop on Optimal Transport, Humboldt University of Berlin; Berlin, Germany, 11 - 15 March 2024; poster presentation; website.    Centre for Mathematical Imaging Techniques Seminar, University of Liverpool; Liverpool, UK, 28 February 2024; seminar talk.    Analysis Seminar, University of Strathclyde; Glasgow, 5 December 2023.</description>
+    </item>
+    
+    <item>
+      <title>Mathematical aspects of materials science</title>
+      <link>https://mbuze.github.io/research/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/materials/</guid>
+      <description>Atomistic fracture  One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
+    </item>
+    
+    <item>
+      <title>Optimal transport theory</title>
+      <link>https://mbuze.github.io/research/ot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/ot/</guid>
+      <description>This page is under construction. The relevant publications are [7], [9] and [10].</description>
     </item>
     
     <item>
@@ -30,16 +48,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/publications/</guid>
-      <description>[9]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations. arXiv e-prints, 2402.11268, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [8]   PyAPD: A Python library for computing anisotropic power diagrams using GPU acceleration, 2023. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;]   [7]   M.&amp;nbsp;Buze and M.H. Duong. Entropic regularisation of unbalanced optimal transportation problems. arXiv e-prints, 2305.02410, 2023. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [6]   M.&amp;nbsp;Buze, T.</description>
-    </item>
-    
-    <item>
-      <title>Research</title>
-      <link>https://mbuze.github.io/research/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mbuze.github.io/research/</guid>
-      <description>Collaborators:   Université Bourgogne Franche-Comté, France: Geneviève Dusson.    University of Birmingham, UK Hong Duong (former postdoctoral mentor)    Cardiff University, UK: Angela Mihai (former postdoctoral mentor), Thomas Woolley    University of Glasgow, UK: Steven Roper    Heriot-Watt University, UK: John Ball (postdoctoral mentor), David Bourne (postdoctoral mentor), Julian Braun, Lucia Scardia (postdoctoral mentor)    University of British Columbia, Canada: Christoph Ortner (PhD advisor).</description>
+      <description>[11]   J.&amp;nbsp;Braun and M.&amp;nbsp;Buze. Incompleteness of Sinclair-type continuum flexible boundary conditions for atomistic fracture simulations. arXiv e-prints, 2403.05462, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [10]   M.&amp;nbsp;Buze, J.&amp;nbsp;Feydy, S.R. Roper, K.&amp;nbsp;Sedighiani, and D.&amp;nbsp;Bourne. Anisotropic power diagrams for polycrystal modelling: efficient generation of curved grains via optimal transport. arXiv e-prints, 2403.03571, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [9]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations.</description>
     </item>
     
     <item>

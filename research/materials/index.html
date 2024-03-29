@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Mathematical aspects of materials science</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: black;
+	--accentt: #386cb0;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="https://mbuze.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.98.0" />
+        
+
+        
+
+	
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+	
+
+        
+
+        
+
+
+	<meta name="google-site-verification" content="Ht7zuOyitBeZHNWE8k2gYEauL2XvMIzuGvgPo3bbYgU" />
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><b>Maciej Buze</b></a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/cv/">CV</a></li>
+                            
+                                <li><a href="/research/">Research</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/events/">Events</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:m.buze@hw.ac.uk"><i class="far fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/mbuze/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://orcid.org/0000-0001-8617-974X"><i class="fab fa-orcid"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.researchgate.net/profile/Maciej_Buze"><i class="fab fa-researchgate"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.com/citations?user=7Hh7IaAAAAAJ&amp;hl=en&amp;oi=ao"><i class="fab fa-google"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Mathematical aspects of materials science</h2>
+        <h5></h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><h4 id="uatomistic-fractureu"><u>Atomistic fracture</u></h4>
+<br>
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+<img src="/crackexample1.jpg" width="300" style="float:right; margin-left:15px;margin-bottom:15px"> One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.
+</p>
+<p>
+The atomistic scale is known to lie at the heart of fracture, with cracks propagating via atomistic mechanisms involving breaking interaction bonds between individual atoms. If one zooms in on a crack tip, firstly it leads to a simplified geometry and then the atomistic structure is revealed, as illustrated below. 
+</div>
+<img src="/crack_zoom2.jpg" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+The following is a gist of my research interests on this topic.
+</p>
+</div>
+<h4 id="atomistic-brittle-fracture">Atomistic brittle fracture</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p> In brittle fracture, with no plastic deformation occurring around the crack tip, the fundamental insight of the standard continuum fracture mechanics lies in identifying a single parameter \(K\), known as <em>the stress intensity factor</em> and showing that if it exceeds a material-dependent critical value, \(K_{\rm c}\) then it is energetically favourable for the crack to propagate.</p>
+<p>
+The key atomistic phenomenon not captured in the continuum theory is known as <em>lattice trapping</em>, a term referring to there existing a range of values for the stress intensity factor \((K_-,K_+)\) for which the crack remains locally stable, i.e. <em>lattice-trapped</em>, thus conceptually invalidating the key insight of the continuum theory. The critical stress intensity factor \(K_{\rm c}\) computed directly from finite-size atomistic models lies somewhere in-between and is known to deviate from the continuum theory prediction. 
+</p>
+<p>
+My work in this area is at the junction of mathematical analysis of the underlying models and the development of novel algorithms leading to quantifiable improvements in the accuracy of computer simulations. 
+</p>
+<p>
+<img src="/decay.png" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+The basic premise is to consider deformations of some crystalline lattice \(\Lambda \subset \mathbb{R}^n\) of the form
+$$
+y\,:\Lambda \to \mathbb{R}^k,\quad y(m) = K\hat{u}(m-\alpha) + u(m),
+$$
+where \(K \in \mathbb{R}\) is the stress intensity factor of the mode of fracture considered, \(\hat{u}\) is the continuum theory <em> predictor </em>, known to give rise to a strain field \(|D\hat{u}(m)| \sim |m|^{-1/2}\), \(\alpha \in \mathbb{R}^n\) is the crack tip position and \(u\) is the <em> atomistic correction</em>, which is constrained to belong to function space \(\dot{\mathcal{H}^1}\), which is a discrete variant of the canonical Sobolev space \(\dot{H}^1(\R^n)\). The key achievement of <a href="/publications/#2018-antiplanecrack">[2]</a> is proving for certain models that at an equilibrium the atomistic correction strain field decays \(|Du(m)|~\sim~|m|^{-3/2}\), as confirmed in numerical tests shown to the right. 
+</p>
+<p>
+<img src="/static_conv.png" width="320" style="float:left; margin-right:15px;margin-bottom:15px">
+A finite domain approximation restricting
+$$
+u(m) = 0\;\forall m \not\in\Omega_R := \Lambda \cap B_R,
+$$
+gives rise to the analysis of cell size effects. Under the reasonable assumption that there exists a continuous path of equilibrium configurations in the infinite problem \(s~\mapsto~(u_s,K_s,\alpha_s)\), it is proven in <a href="/publications/#2019-antiplanecrack">[3]</a> that for \(R\) large enough there exists an approximate path of equlibrium configurations \(s~\mapsto~(u^R_s,K^R_s,\alpha^R_s)\) such that 
+$$
+\|Du_s-Du^R_s\|_{\ell^2} + |K_s - K^R_s| + |\alpha_s - \alpha_s^R| \lesssim R^{-1/2}.
+$$
+While the convergence rate follows directly from the decay properties of \(Du\), a recourse to bifurcation theory for Banach spaces is needed for this to to apply to continuous paths of equilibria.
+</p>
+<p>
+<img src="/ncflex1.jpg" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+The work in <a href="/publications/#2020-crack-physics">[5]</a> looks at practical ways of computing approximate equilibrium paths. In particular we have proposed the novel numerical-continuation-enhanced flexible boundary (NCFlex) scheme, which appears to improve the convergence rate to \(\mathcal{O}(R^{-1})\) and is also capable of identifying index-1 saddle equilibria with ease, thus constituting an indespensible tool for the study of energy barriers, as shown to the right. 
+</p>
+<p>
+It is hoped that more accurate NCFlex-type schemes can be systematically derived by marrying this approach with the idea of <em>development of solutions</em> first proposed in <a href="/publications/#2017-bcscrew">[1]</a>, which entails prescribing a more accurate continuum predictor.
+</p>
+<p>
+The NCFlex scheme applied to two realistic models of silicon yields the paths of equilibrium configurations shown below, which reveals subtle qualitative difference at the unstable segments of the equilibrium paths that would be near impossible to capture with methods known to date. 
+</p>
+</div>
+<img vspace="20" src="/ncflex2.jpg" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+<br>
+In the new preprint <a href="/publications/#BB24">[11]</a> done in collaboration with Julian Braun, we improve upon these results by rigorously developing the next order continuum predictor. This translates to the atomistic corrector decaying like
+\(|Du(m)|~\sim~|m|^{-5/2}\), which also improves the convergence rate of finite domain approximation to \(\mathcal{O}(R^{-1}).\).
+</div>
+<br>
+<h4 id="atomistic-and-mesoscale-near-crack-tip-plasticity">Atomistic and mesoscale near-crack-tip plasticity</h4>
+<div style="text-align:justify; text-justify: inter-word">
+In ductile fracture, the stresses near the crack tip lead to a build up of topological defects known as dislocations, carriers of plastic deformation, which can potentially shield the material from further crack propagation. 
+<p>In a recent independent endeavour <a href="/publications/#2020-near-crack-tip-pas">[4]</a>, I have introduced a novel geometric and functional framework of the <em>lattice manifold complex</em>, in which a cracked crystalline material is described by a CW complex structure defined on the Riemann surface
+$$
+\mathcal{S} = \lbrace (z,w) \in \Complex^2 \, | \, w^2 = z \rbrace
+$$
+corresponding to the complex square root mapping. The essence of the construction is presented in the following figure. 
+</p>
+</div>
+<img src="/duality.png" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+Considering deformations of a cracked crystal in this framework has led to establishing existence of <em>near-crack-tip plasticity equilibria</em>, in which a crack opening and a finite number of dislocations are present. This has unlocked a number of further studies about near-crack-tip plasticity, most notably asking about a rigorous passage from the atomistic scale to the mesoscopic scale, as well the study of equilibria in the upscaled representation, which is the most relevant scale to the problem. 
+</p>
+</div>
+<br>
+<br>
+<h4 id="ustochastic-approaches-to-atomistic-material-modellingu"><u>Stochastic approaches to atomistic material modelling</u></h4>
+<br>
+<h4 id="maximum-entropy-priors">Maximum Entropy priors</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+During my time at Cardiff University, I have worked with Dr Angela Mihai and Dr Thomas Woolley on a new information-theoretic stochastic approach to atomistic material modelling, based around the idea of invoking Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential. We first employ this new framework to study atomistic fracture from a stochastic point of view.
+</p>
+<p>
+As an illustration, consider the simplified case of Mode III fracture under antiplane displacements \(y(m)~=~(0,0, y_3(m)),\,\forall m \in \Lambda\) with energy (morally) of the form
+$$
+\mathcal{E}(y) = \sum_{m \in \Lambda} \sum_{\rho \in \mathcal{R}} \phi(y_3(m+\rho) - y_3(m))),
+$$
+where \(\mathcal{R}\) is the set of interaction stencils and  \(\phi\) is the pair-potential.
+</p>
+<p>
+<img src="/sampled_func_example.png" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+If \(\phi\) is of the form
+$$
+\phi(r) = \alpha\left(1-\exp(-\beta r^2)\right),
+$$
+then it is of interest to understand how an inherent uncertainty in the choice of \(\alpha\) and \(\beta\) propagates to uncertaintities in the key quantities describing atomistic crack propagation, namely \(K_{\rm c}\) and \( (K_-,K_+)\) (as discussed in the section on atomistic brittle fracture above). A plot of functions \(\phi\) for different parameter choices (with mean highlighted) can be seen to the right. 
+</p>
+<p>
+The choice of parameters has to be such that the notion of <em>lattice stability</em> is satisfied, which, when fed into the Maximum Entropy Principle framework, implies that both parameters should follow Gamma distribution. A direct calculation possible in this simple scenario then reveals that \(K_{\rm c} = C \beta^{-1/2}\) for some crystalline-structure-dependent known constant \(C\), thus revealing the propagation of uncertainties, as can be seen in a histogram plot below.
+</p>
+</div>
+<img src="/distr_example.png" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+<p>See our paper <a href="/publications/#BWM2022">[6]</a> for a full exposition of this work.</p>
+</div>
+<br>
+<h4 id="uncertainty-quantification-for-interatomic-potentials">Uncertainty quantification for interatomic potentials</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p>Expanding on the work outlined above, I am working with Geneviève Dusson on formalising a more general maximum-entropy-principle-based framework for uncertainty quantification in atomistic material modelling and to compare it with currently available approaches.</p>
+</p>
+</div>
+<br>
+<br>
+<h4 id="ugeometric-modelling-of-polycrystalline-materialsu"><u>Geometric modelling of polycrystalline materials</u></h4>
+<div style="text-align:justify; text-justify: inter-word">
+At Heriot-Watt University I am working with David Bourne and Steven Roper on efficient reconstruction and generation of microstructure with desirable properties related to size, location and aspect ratio of constitutive grains. In a recently completed work <a href="/publications/#BFRSB24">[10]</a> , we propose a novel and fast approach based on anisotropic power diagrams. We rely on fast optimal transport algorithms that stream well on Graphics Processing Units (GPU) and handle
+non-uniform, anisotropic distance functions. This allows us to find APDs that best fit experimental data in (tens of) seconds, which unlocks their use for computational homogenisation. This is especially relevant to machine learning methods
+that require the generation of large collections of representative microstructures as training data. The paper is accompanied by a Python library, PyAPD, which is freely available <a href="www.github.com/mbuze/PyAPD"> at Github</a>.
+</div>
+<br>
+<img src="/logo.png" width="700">
+<br>
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© 2024 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</html>
+
