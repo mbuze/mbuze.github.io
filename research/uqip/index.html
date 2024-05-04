@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Uncertainty quantification for machine learning interatomic potentials</title>
+        
+        <style>
+
+    html body {
+        font-family: 'Raleway', sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: black;
+	--accentt: #386cb0;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="https://mbuze.github.io/css/main.css">
+
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scala.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.98.0" />
+        
+
+        
+
+	
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+	
+
+        
+
+        
+
+
+	<meta name="google-site-verification" content="Ht7zuOyitBeZHNWE8k2gYEauL2XvMIzuGvgPo3bbYgU" />
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/"><b>Maciej Buze</b></a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+		<div class="collapse navbar-collapse" id="navbar-collapse-1">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/cv/">CV</a></li>
+                            
+                                <li><a href="/research/">Research</a></li>
+                            
+                                <li><a href="/publications/">Publications</a></li>
+                            
+                                <li><a href="/events/">Events</a></li>
+                            
+                                <li><a href="/teaching/">Teaching</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:m.buze@hw.ac.uk"><i class="far fa-envelope"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/mbuze/"><i class="fab fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://orcid.org/0000-0001-8617-974X"><i class="fab fa-orcid"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.researchgate.net/profile/Maciej_Buze"><i class="fab fa-researchgate"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://scholar.google.com/citations?user=7Hh7IaAAAAAJ&amp;hl=en&amp;oi=ao"><i class="fab fa-google"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Uncertainty quantification for machine learning interatomic potentials</h2>
+        <h5></h5>
+        
+
+    </div>
+
+    <div align="start" class="content"><div style="text-align:justify; text-justify: inter-word">
+Interatomic potentials approximate the potential energy of systems of atoms as a function of their positions and are seen as a computationally feasible alternative to electronic structure calculations, which additionally model the motion of electrons around atomic nuclei. Empirical potentials have between $2$ and $11$ parameters, rising to $>1000$ for modern machine-learning potentials, and the highly nonlinear nature of the overall model necessitates quantifying the uncertainty in their choice and how this propagates to quantities of interest, such as mechanical or chemical properties of materials. Usually, this is achieved by employing a Bayesian approach, whereby one assumes some prior probability distributions for the parameters defining a given interatomic potential, which are subsequently updated using available data originating from experiments or higher-level theories.<br><br>
+<p>Modern machine learning potentials frameworks such as the Atomic Cluster Expansion (ACE) (see <a href="https://doi.org/10.1103/PhysRevB.99.014104">[D19]</a>) can be thought of as high-dimensional, structure-preserving generalisations of polynomial approximation of scalar functions with Legendre polynomials. It is well known that ACE potentials perform very well outside the regions that they were trained on and, crucially, were shown to be systematically improvable, in the sense that if we refit the potential by using higher order polynomials, the errors decrease. On the other hand, standard parametric uncertainty quantification (UQ) of ACE potentials can yield quite wide uncertainty bars, which happens because the systematic improvability is not baked into the UQ framework.</p>
+<p>The aim of this project, done in collaboration with <a href="https://gdusson.perso.math.cnrs.fr/">Geneviève Dusson (Besançon)</a>, is to leverage rigorous polynomial approximation theory and Bayesian regression to create a mathematical framework in which one can reliably decrease uncertainty of machine learning interatomic potentials. You can see me talk about this work <a href="https://www.youtube.com/watch?v=RfydPkA8OfQ">here</a>. Numerical experiments associated with this project are done in Julia and benefit from its excellent libraries, <a href="https://github.com/JuliaApproximation/ApproxFun.jl">ApproxFun.jl</a> and <a href="https://github.com/ACEsuit/ACEpotentials.jl">ACEpotentials.jl</a>.</p>
+<p>This work is a follow-up to past work on deriving maximum entropy priors for interatomic potentials, which I will discuss now.</p>
+</div>
+<h4 id="maximum-entropy-priors">Maximum Entropy priors</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+During my time at Cardiff University, I have worked with <a href="https://www.cardiff.ac.uk/people/view/98660-mihai-angela">Angela Mihai</a> and <a href="https://thomaswoolley.co.uk/">Thomas Woolley</a> on a new information-theoretic stochastic approach to atomistic material modelling, based around the idea of invoking Cauchy-Born rule and Maximum Entropy Principle to infer the probability distribution of parameters specifying the interatomic potential.
+<p>In the corresponding stochastic approach to continuum linearised elasticity theory, the elasticity tensor $\mathbb{C}$ has, depending on the symmetry class considerd, up to to 21 independent entries. Its symmetric matrix representation ${[\mathbb{C}]} \in \mathbb{R}^{6\times 6}$ admits a decomposition</p>
+<p>$$
+{[\mathbb{C}]} = \sum_{i=1}^n {c_i} {M_i}.
+$$</p>
+<p>The parameters are ${\bm{c} = (c_1,\dots,c_n)} \in \R^n$.</p>
+<p>The theory developed in <a href="https://doi.org/10.1007/s10659-012-9396-z">[GS13]</a> concerns invoking the maximum entropy principle (MaxEnt) on a minimal set of constraints</p>
+<ul>
+<li> The mean value of the elasticity tensor is known.
+<li> The elasticity tensor $\mathbb{C}$ and its inverse both have finite second-order moments (to ensure physical consistency).
+</ul>
+One can write them as expectations
+<p>$$
+\mathbb{E}\{{\bm{f}(\bm{c})}\} = { \bm{h}},
+$$</p>
+<p>where $\bm{f} \colon \mathbb{R}^n \to \mathbb{R}^q$ and $\bm{h} \in \mathbb{R}^q$, which ensures that using MaxEnt principle, the least informative prior on $\bm c$ has probability density</p>
+<p>$$
+\rho(\bm{c}) := \bm{1}_{S}(\bm{c}) \exp\{- (\bm{\lambda},\bm{f}(\bm{c}))_{\mathbb{R}^q}\},
+$$</p>
+<p>where $S \subset \mathbb{R}^n$ represents all admissable choices for $\bm{c} \in \mathbb{R}^n$ and $\bm{\lambda} = (\lambda_1,\dots,\lambda_q)$ are Lagrange multipliers. The key point to determine whether the joint probability density simplifies is then the study the separability of</p>
+<p>To connect this theory to atomistic models, we invoke Cauchy-Born rule to assemble an atomistic-model-determined elasticity tensor with entries</p>
+<p>$$
+\mathbb{C}_{i\alpha}^{j\beta} = \frac{1}{{\rm det}({\ell} {\rm A})} { S_{i\alpha}^{j\beta}}, \quad \quad S_{i\alpha}^{j\beta} = \sum_{\sigma,\lambda}\partial^2_{i\sigma j \lambda} V(\{\rho\})\sigma_{\alpha}\lambda_\beta
+$$
+where $\ell$ is the lattice constant, ${\rm A}$ is a matrix defining the lattice, $V$ is the interatomic potential and the sum is over neighbouring atoms.</p>
+<p>We can invoke the maximum entropy principle (MaxEnt) on a minimal set of constraints</p>
+<ul>
+<li>The mean value of the interatomic potential parameters are known.
+<li>The Cauchy--Born elasticity tensor $\mathbb{C}$ and its inverse both have finite second-order moments (for physical consistency).
+</ul>
+And the key point is again the study the separability of ${\log({\rm det}[\mathbb{C}])}$, which is now a function of the parameters of the potential. <br><br>
+<img src="/LJ.png" width="400" style="float:right; margin-left:15px;margin-bottom:15px">
+We have employed this framework to study a crystalline system interacting under the the Lennard Jones (pictured to the right) potential with two parameters $a_1,a_2$. In the framework described above, we prove that MaxEnt prior for the potential parameters $a_1$ and $a_2$ is product of two Gamma distributions, meaning that $a_1$ and $a_2$ are statistically independent.<br><br>
+<p>We then use this framework to study how uncertainty in the choice of parameters propagates to quantities of interest describing atomistic crack propagation: the Griffith&rsquo;s criterion critical stress intensity factor $\tilde K_{\rm cont}$ and the lattice trapping range $(K_-,K_+)$. In particular, we are able to assemble the following scatter matrix plot.</p>
+</div>
+<img src="/stoch_atom_frac.png" width="700"><br><br>
+<div style="text-align:justify; text-justify: inter-word">
+See our paper <a href="/publications/#BWM2022">[6]</a> for a full exposition of this work.
+<!-- <br><br><br><br><br>
+</p>
+<p>
+As an illustration, consider the simplified case of Mode III fracture under antiplane displacements \(y(m)~=~(0,0, y_3(m)),\,\forall m \in \Lambda\) with energy (morally) of the form
+$$
+\mathcal{E}(y) = \sum_{m \in \Lambda} \sum_{\rho \in \mathcal{R}} \phi(y_3(m+\rho) - y_3(m))),
+$$
+where \(\mathcal{R}\) is the set of interaction stencils and  \(\phi\) is the pair-potential.
+</p>
+<p>
+<img src="/sampled_func_example.png" width="350" style="float:right; margin-left:15px;margin-bottom:15px">
+If \(\phi\) is of the form
+$$
+\phi(r) = \alpha\left(1-\exp(-\beta r^2)\right),
+$$
+then it is of interest to understand how an inherent uncertainty in the choice of \(\alpha\) and \(\beta\) propagates to uncertaintities in the key quantities describing atomistic crack propagation, namely \(K_{\rm c}\) and \( (K_-,K_+)\) (as discussed in the section on atomistic brittle fracture above). A plot of functions \(\phi\) for different parameter choices (with mean highlighted) can be seen to the right. 
+</p>
+<p>
+The choice of parameters has to be such that the notion of <em>lattice stability</em> is satisfied, which, when fed into the Maximum Entropy Principle framework, implies that both parameters should follow Gamma distribution. A direct calculation possible in this simple scenario then reveals that \(K_{\rm c} = C \beta^{-1/2}\) for some crystalline-structure-dependent known constant \(C\), thus revealing the propagation of uncertainties, as can be seen in a histogram plot below.
+</p>
+</div>
+<img src="/distr_example.png" width="700">
+<div style="text-align:justify; text-justify: inter-word">
+<p>
+</div> -->
+</div>
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted">© 2024 Maciej Buze; All rights reserved. Powered by <a href="https://gohugo.io">Hugo</a>, <a href="https://github.com/calintat/minimal">Minimal</a> and <a href="https://katex.org/">KaTeX</a>.</p>
+        </footer>
+
+        
+
+        
+    </body>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+</html>
+

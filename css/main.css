@@ -108,15 +108,15 @@ footer {
 
 .dl-horizontal dt{
         float:left;
-        width:110px !important;
+        width:140px !important;
         overflow:visible !important;
         clear:left;
-        text-align:left !important;
+        text-align:right !important;
         text-overflow:ellipsis;
         white-space:nowrap
 }
 .dl-horizontal dd{
-        margin-left:115px !important;
+        margin-left:165px !important;
         text-align:left !important
 }
 

@@ -10,9 +10,9 @@
   </url><url>
     <loc>https://mbuze.github.io/cv/</loc>
   </url><url>
-    <loc>https://mbuze.github.io/events/</loc>
-  </url><url>
     <loc>https://mbuze.github.io/research/materials/</loc>
+  </url><url>
+    <loc>https://mbuze.github.io/events/</loc>
   </url><url>
     <loc>https://mbuze.github.io/research/ot/</loc>
   </url><url>
@@ -21,5 +21,7 @@
     <loc>https://mbuze.github.io/tags/</loc>
   </url><url>
     <loc>https://mbuze.github.io/teaching/</loc>
+  </url><url>
+    <loc>https://mbuze.github.io/research/uqip/</loc>
   </url>
 </urlset>

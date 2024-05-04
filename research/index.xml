@@ -7,21 +7,30 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language><atom:link href="https://mbuze.github.io/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mathematical aspects of materials science</title>
+      <title>Discrete modelling of nucleation and migration of defects in materials</title>
       <link>https://mbuze.github.io/research/materials/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/research/materials/</guid>
-      <description>Atomistic fracture  One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
+      <description>Atomistic numerical continuation and deflation techniques Modern high-throughput molecular and atomistic simulations rely on sophisticated optimisation tools to effectively explore the severely non-convex energy landscapes. Bifurcation theory-based techniques such as numerical continuation and deflation are well-developed mathematical approaches already used in a range of nonlinear settings (see e.g., [AG90], [FBF15]), but remain underutilised in atomistic and molecular simulations. The broader adoption of such tools at atomistic scales has been identified as highly desirable in a recent white paper, a summary document of the IPAM Long Program New Mathematics for the Exascale: Applications to Materials Science [*].</description>
     </item>
     
     <item>
-      <title>Optimal transport theory</title>
+      <title>Optimal transport - theory and applications</title>
       <link>https://mbuze.github.io/research/ot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/research/ot/</guid>
-      <description>This page is under construction. The relevant publications are [7], [9] and [10].</description>
+      <description>[7], [9] and [10]. -- In its basic version, the optimal transport (OT) problem is to solve $$ \min_{\gamma} \left\{ \int_{X \times X} c(x_1,x_2) d\gamma(x_1,x_2)\, \Bigm\vert \, \gamma \in \mathcal{P}(X \times X),\; \gamma_i = \mu_i\right\}, $$ where $\mu_1 \in \mathcal P(X)$ is the source measure, $\mu_2 \in \mathcal P(X)$ is the target measure, ${c \,\colon\, X \times X \to \mathbb{R}\cup \{+\infty\}}$ is the cost function, and $\gamma_i$ is the $i$th marginal of the transport plan $\gamma$.</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty quantification for machine learning interatomic potentials</title>
+      <link>https://mbuze.github.io/research/uqip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/uqip/</guid>
+      <description>Interatomic potentials approximate the potential energy of systems of atoms as a function of their positions and are seen as a computationally feasible alternative to electronic structure calculations, which additionally model the motion of electrons around atomic nuclei. Empirical potentials have between $2$ and $11$ parameters, rising to $1000$ for modern machine-learning potentials, and the highly nonlinear nature of the overall model necessitates quantifying the uncertainty in their choice and how this propagates to quantities of interest, such as mechanical or chemical properties of materials.</description>
     </item>
     
   </channel>

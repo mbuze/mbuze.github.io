@@ -12,7 +12,17 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/cv/</guid>
-      <description>Career and Education  2023 - Present  Research Associate at School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK; working on several EPSRC-funded projects about mathematical theory of polycrystalline materials with Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.   2022 - 2023  Research Fellow at School of Mathematics, University of Birmingham, UK; working on an EPSRC-funded project about analysis of evolutionary PDEs as gradient flows arising from Optimal Transportation Theory with Dr Hong Duong;  organising the Reading Group on Mathematics of Data Science (see Events).</description>
+      <description>Career and Education  February 2023 - Present  Research Associate at School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK; A postdoctoral position funded by EPSRC grant
+awarded jointly to Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.  I am primarily working with Dr D. Bourne and Dr Steven Roper (Glasgow) on using modern GPU-oriented optimal transport computational tools in the modelling of polycrystalline materials. See our Python library, PyAPD.</description>
+    </item>
+    
+    <item>
+      <title>Discrete modelling of nucleation and migration of defects in materials</title>
+      <link>https://mbuze.github.io/research/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/materials/</guid>
+      <description>Atomistic numerical continuation and deflation techniques Modern high-throughput molecular and atomistic simulations rely on sophisticated optimisation tools to effectively explore the severely non-convex energy landscapes. Bifurcation theory-based techniques such as numerical continuation and deflation are well-developed mathematical approaches already used in a range of nonlinear settings (see e.g., [AG90], [FBF15]), but remain underutilised in atomistic and molecular simulations. The broader adoption of such tools at atomistic scales has been identified as highly desirable in a recent white paper, a summary document of the IPAM Long Program New Mathematics for the Exascale: Applications to Materials Science [*].</description>
     </item>
     
     <item>
@@ -21,25 +31,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>Maxwell Analysis Day; ICMS, Edinburgh, UK, 27 March 2024; A half-day event bringing together the HW and UoE analysis groups; organiser on behalf of HW. website.    Workshop on Optimal Transport, Humboldt University of Berlin; Berlin, Germany, 11 - 15 March 2024; poster presentation; website.    Centre for Mathematical Imaging Techniques Seminar, University of Liverpool; Liverpool, UK, 28 February 2024; seminar talk.    Analysis Seminar, University of Strathclyde; Glasgow, 5 December 2023.</description>
+      <description>Future events   Computational Materials Science and Mathematics at the Particle and Atomistic Scales ICMS, Edinburgh, UK, 10-14 November 2025 I am on the organising committee and will run a one-day session devoted to numerical continuation/deflation and optimisation techniques at the atomistic scale. More info to follow. website. --    Singularities in Discrete Systems Oberwolfach, Germany 4-9 May 2025. website    Summer School on Deep Learning for Mathematical Imaging  University of Liverpool, July 2024 I am invited by Dr Andreas Alpers to deliver a short course on machine learning approaches to microstructure modelling in Python, including a hands-on showcase of my library PyAPD, to research interns at The Centre for Mathematical Imaging Techniques.</description>
     </item>
     
     <item>
-      <title>Mathematical aspects of materials science</title>
-      <link>https://mbuze.github.io/research/materials/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mbuze.github.io/research/materials/</guid>
-      <description>Atomistic fracture  One of my main research interests concerns developing a mathematically rigorous theory of fracture starting from the atomistic scale. The term fracture refers to a separation of a material into two or more pieces by means of a thin opening, a crack, propagating through it due to the accumulation of stress. Cracks are abundant in human-built structures and are, for instance, a common sight in the walls of ageing buildings, as seen to the right in the a photo of a crack in the wall of my student accomodation at Warwick.</description>
-    </item>
-    
-    <item>
-      <title>Optimal transport theory</title>
+      <title>Optimal transport - theory and applications</title>
       <link>https://mbuze.github.io/research/ot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/research/ot/</guid>
-      <description>This page is under construction. The relevant publications are [7], [9] and [10].</description>
+      <description>[7], [9] and [10]. -- In its basic version, the optimal transport (OT) problem is to solve $$ \min_{\gamma} \left\{ \int_{X \times X} c(x_1,x_2) d\gamma(x_1,x_2)\, \Bigm\vert \, \gamma \in \mathcal{P}(X \times X),\; \gamma_i = \mu_i\right\}, $$ where $\mu_1 \in \mathcal P(X)$ is the source measure, $\mu_2 \in \mathcal P(X)$ is the target measure, ${c \,\colon\, X \times X \to \mathbb{R}\cup \{+\infty\}}$ is the cost function, and $\gamma_i$ is the $i$th marginal of the transport plan $\gamma$.</description>
     </item>
     
     <item>
@@ -48,7 +49,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/publications/</guid>
-      <description>[11]   J.&amp;nbsp;Braun and M.&amp;nbsp;Buze. Incompleteness of Sinclair-type continuum flexible boundary conditions for atomistic fracture simulations. arXiv e-prints, 2403.05462, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [10]   M.&amp;nbsp;Buze, J.&amp;nbsp;Feydy, S.R. Roper, K.&amp;nbsp;Sedighiani, and D.&amp;nbsp;Bourne. Anisotropic power diagrams for polycrystal modelling: efficient generation of curved grains via optimal transport. arXiv e-prints, 2403.03571, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [9]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations.</description>
+      <description>[10]   J.&amp;nbsp;Braun and M.&amp;nbsp;Buze. Incompleteness of Sinclair-type continuum flexible boundary conditions for atomistic fracture simulations. arXiv e-prints, 2403.05462, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [9]   M.&amp;nbsp;Buze, J.&amp;nbsp;Feydy, S.R. Roper, K.&amp;nbsp;Sedighiani, and D.&amp;nbsp;Bourne. Anisotropic power diagrams for polycrystal modelling: efficient generation of curved grains via optimal transport. arXiv e-prints, 2403.03571, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [8]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations.</description>
     </item>
     
     <item>
@@ -57,7 +58,18 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/teaching/</guid>
-      <description>Teaching at Heriot-Watt 2023/2024   Lecturer for F17XB Mathematics for Engineers and Scientists 2; A big service course for 500+ students across three campuses.    Guest Lecturer for F17CB Calculus B;     Teaching at Warwick  2018/2019   Supervisions of second-year Maths students, Term 1; modules covered: MA244 Analysis III, MA251 Algebra I: Advanced Linear Algebra, MA259 Multivariable Calculus.   2017/2018  Supervisions of first-year Maths&amp;Physics students, Terms 1 &amp; 2; same modules as in previous year&#39;s supervisions.</description>
+      <description>Summer School on Deep Learning for Mathematical Imaging
+July 2024 I am invited by Dr Andreas Alpers to deliver a short course on machine learning approaches to microstructure modelling in Python, including a hands-on showcase of my library PyAPD, to research interns at The Centre for Mathematical Imaging Techniques. Materials related to this will appear here.
+ Teaching at Heriot-Watt 2023/2024   Lecturer for F17XB Mathematics for Engineers and Scientists 2; A big service course for 500+ students across three campuses.</description>
+    </item>
+    
+    <item>
+      <title>Uncertainty quantification for machine learning interatomic potentials</title>
+      <link>https://mbuze.github.io/research/uqip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mbuze.github.io/research/uqip/</guid>
+      <description>Interatomic potentials approximate the potential energy of systems of atoms as a function of their positions and are seen as a computationally feasible alternative to electronic structure calculations, which additionally model the motion of electrons around atomic nuclei. Empirical potentials have between $2$ and $11$ parameters, rising to $1000$ for modern machine-learning potentials, and the highly nonlinear nature of the overall model necessitates quantifying the uncertainty in their choice and how this propagates to quantities of interest, such as mechanical or chemical properties of materials.</description>
     </item>
     
   </channel>

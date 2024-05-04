@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Optimal transport theory</title>
+        <title>Optimal transport - theory and applications</title>
         
         <style>
 
@@ -153,14 +153,95 @@
 <main>
 
     <div>
-        <h2>Optimal transport theory</h2>
+        <h2>Optimal transport - theory and applications</h2>
         <h5></h5>
         
 
     </div>
 
-    <div align="start" class="content"><p>This page is under construction. The relevant publications are <a href="/publications/#BD23">[7]</a>, <a href="/publications/#B24">[9]</a> and <a href="/publications/#2024-BFRSB24">[10]</a>.</p>
+    <div align="start" class="content"><!-- This page is under construction. The relevant publications are <a href="/publications/#BD23">[7]</a>, <a href="/publications/#B24">[9]</a> and <a href="/publications/#2024-BFRSB24">[10]</a>. -->
+<div style="text-align:justify; text-justify: inter-word">
+In its basic version, the optimal transport (OT) problem is to solve 
+$$
+  \min_{\gamma} \left\{ \int_{X \times X} c(x_1,x_2) d\gamma(x_1,x_2)\, \Bigm\vert \, \gamma \in \mathcal{P}(X \times X),\; \gamma_i = \mu_i\right\}, 
+$$
+where $\mu_1 \in \mathcal P(X)$ is the source measure, $\mu_2 \in \mathcal P(X)$ is the target measure, ${c \,\colon\, X \times X \to \mathbb{R}\cup \{+\infty\}}$ is the cost function, and $\gamma_i$ is the $i$th marginal of the transport plan $\gamma$. To obtain efficient algorithms for solving the OT problem, with provable convergence, optimal transport problems are often regularised with entropy (see, e.g., <a href="http://dx.doi.org/10.1561/2200000073">[PC19]</a>, <a href="https://www.math.columbia.edu/~mnutz/docs/EOT_lecture_notes.pdf">[N21]</a>), and, to allow for source and target measures to have different total mass, the theory has been recently extended to the unbalanced setting of positive Radon measures with finite mass <a href="https://doi.org/10.1007/s00222-017-0759-8">[LMS18]</a>.<br><br>
+A semi-discrete optimal transport problem concerns the situation when $X$ is compact subset of $\mathbb{R}^n$ and the source measure is the Lebesgue measure on $X$ and target measure is a sum of $N$ Dirac masses located at $x_1,\dots,x_N$ and with weights $v_1,\dots,v_N$. 
+<p>If $c(x_1,x_2) = |x_1-x_2|^2$, then the solution to such an OT problem corresponds to a power diagram $\bigcup_{i=1}^N L_i = X$,
+$$
+L_i = \{{ x} \in X,\mid, |{ x}-{ x_i}|^2 - { w_i} \leq |{ x}-{ x_j}|^2 - { w_j},\quad \forall j\},
+$$
+where the weights $w_1,\dots,w_N$ ensure that the mass of each cell satisfies $|L_i| = v_i$ (see, e.g., <a href="http://dx.doi.org/10.1561/2200000073">[PC19, Chapter 5])</a>.<br><br></p>
+<p>My work in this area, on the theoretical side, concerns developing a <em>lifting theory</em> for unbalanced optimal transport, and, on the practical side, applying non-standard variants of semi-discrete optimal transport in the modelling of polycrystalline materials, with emphasis on fast GPU-enhanced computation.</p>
 </div>
+<br>
+<h4 id="ulifting-theory-for-unbalanced-optimal-transportu"><u>Lifting theory for unbalanced optimal transport</u></h4>
+<br>
+<div style="text-align:justify; text-justify: inter-word">
+The broader theory of unbalanced optimal transport is still in development and some of the outstanding questions of interest to me concern the so-called conic theory of entropic regularisation as well a general theory of unbalanced barycenter of $n$ measures.
+<p>Using shorthand coupling notation $(c,\gamma) = \int_{X \times X}c(x_1,x_2)d\gamma(x_1,x_2)$ and relying on the formalism developed in <a href="https://doi.org/10.1007/s00222-017-0759-8">[LMS18]</a> one can equivalently formulate the OT problem as
+$$
+{\rm OT}(\mu_1,\mu_2) = \inf_{\gamma \in \mathcal{M}(X \times X)} \Big( \sum_i \overline{\mathcal F}(\gamma_i \mid \mu_i) + (c,\gamma)\Big),
+$$
+where $\overline \mathcal{F}(\gamma_i \mid \mu_i) = 0$ if $\gamma_i = \mu_i$ and $+\infty$ otherwise, which in particular encodes the infeasibility of the problem when masses of the measures differ, as
+$$
+\mu_1(X) \neq \mu_2(X) \implies {\rm OT}(\mu_1,\mu_2) = +\infty.
+$$</p>
+<p>The idea behind the unbalanced optimal transport problems is to relax the hard-constraint $\overline \mathcal F$ and replace it with an entropy functional merely penalising the deviations between the marginals of $\gamma$ and $\mu_i$.
+$$
+\mathcal F_i(\gamma_i \mid \mu_i) := \int_X F_i(\sigma_i)d\mu_i + (F_i)&rsquo;_{\infty}\gamma_i(X), \quad \gamma_i = \sigma_i \mu_i + \gamma_i^{\perp}
+$$
+where $F_i$ is some suitable entropy function. The unbalanced optimal transport problem is thus given by</p>
+<p>$$
+{\rm UOT}(\mu_1,\mu_2) = \inf_{\gamma \in \mathcal{M}(X \times X)} \Big( \sum_i {\mathcal F}_i(\gamma_i \mid \mu_i) + (c,\gamma)\Big)
+$$</p>
+<p>Remarkably, it can be shown (see Section 5 of <a href="https://doi.org/10.1007/s00222-017-0759-8">[LMS18]</a>) that this problem admits an extended space formulation</p>
+<p>$$
+{\rm UOT}(\mu_1,\mu_2) = \inf_{\alpha \in S(\mu_1,\mu_2)} (H,\alpha), \quad (H,\alpha):= \int_{Y \times Y} H(y_1,y_2)d\alpha(y_1,y_2),
+$$</p>
+<p>where the lifted space is $Y := X \times \mathbb{R}_{+}$ with notation
+$y_i = (x_i, s_i)$ and $H \colon Y \times Y \to \overline{\R}$ is the induced marginal perspective cost function. The infimum is taken over the set of measures satisfying homogeneous marginal constraints</p>
+<p>$$
+S(\mu_0,\mu_1) = \Big\{ \alpha \in \mathcal{M}(Y \times Y) \mid \pi^{x_i}_{\#}(s_i \alpha) = \mu_i.\Big\}
+$$</p>
+</div>
+<br>
+<h4 id="entropic-regularisation-of-uot">Entropic regularisation of UOT</h4>
+<div style="text-align:justify; text-justify: inter-word">
+In <a href="/publications/#BD23">[7]</a>, together with <a href="https://sites.google.com/site/duonghongmath/">Hong Duong</a> we study study entropy regularisation of the unbalanced optimal transport problems, with particular focus on its possible lifted description. We recognise that this can be done in two very different ways -- starting from the original formulation, we can regularise on the original space and consider
+<p>$$
+{\rm UOT}_{X,\varepsilon}(\mu_1,\mu_2) = \inf_{\gamma \in \mathcal{M}(X \times X)} \Big\{ \sum_i {\mathcal{F}_i}(\gamma_i \mid \mu_i) + (c,\gamma) + \varepsilon \mathcal{F}(\gamma \mid \nu_X) \Big\}
+$$</p>
+<p>On the other hand, we can first lift to the cone space $Y = X \times \R_+$ and then regularise on the extended space and consider</p>
+<p>$$
+{\rm UOT}_{Y,\varepsilon}(\mu_1,\mu_2) = \inf_{\alpha \in S(\mu_1,\mu_2)}\Big\{ (H,\alpha) + \varepsilon \mathcal{F}(\alpha \mid \nu_Y)\Big\},
+$$
+for some reference measure $\nu_Y \in \mathcal{M}(Y \times Y)$.</p>
+<p>In the paper, with regards to ${\rm UOT}_{X,\varepsilon}(\mu_1,\mu_2)$, we rigorously derive a new lifted description posed as a minimisation problem over $\mathcal{M}(X^2 \times \mathbb{R}_+^3)$.</p>
+<p>For ${\rm UOT}_{Y,\varepsilon}(\mu_1,\mu_2)$, we establish that as the regularisation parameter $\varepsilon  \to 0$, the   regularisation converges to the original unbalanced optimal transport problem. To achieve this, we leverage the reformulation of the unbalanced optimal transport problem as an infimum over optimal transport problems on the extended space and the known theory of balanced entropic optimal transport.</p>
+<p>We also sketch out key ingredients of a unified framework where both regularisations can be directly compared to each other to their dynamical formulation counterparts. A full account of this theory is still very much work in progress.</p>
+</div>
+<br>
+<h4 id="unbalanced-optimal-transport-barycenters">Unbalanced optimal transport barycenters</h4>
+<div style="text-align:justify; text-justify: inter-word">
+<p>In a recent independent endeavour <a href="/publications/#B24">[8]</a> I study the problem of finding a measure $\bar \nu \in \mathcal{M}(X)$ providing a barycentric description of a set of $N$ measures $\vec \mu = (\mu_1,\dots,\mu_N)$, $\mu_i \in \mathcal{M}(X)$ with nonnegative weights $\vec \lambda = (\lambda_1,\dots,\lambda_N)$ adding to one by solving</p>
+<p>$$
+{\rm UOT}(\vec \mu) := \inf_{\nu \in \mathcal{M}(X)} \Big\{ \sum_{i=1}^N \lambda_i {\rm UOT}(\mu_i,\nu) \Big\},
+$$
+for a specific choice of the cost function and entropy functionals $\mathcal{F}_i$ which I term the contrained Hellinger&ndash;Kantorovich setup.</p>
+<p>Using a similar lifting strategy as for the new lifted formulation of ${\rm UOT}_{X,\varepsilon}(\mu_1,\mu_2)$ we developed in <a href="/publications/#BD23">[7]</a>, I derive a new conic multi-marginal formulation of the barycenter problem related to the Hellinger-Kantorovich (HK) metric, which admits a very natural soft multi-marginal formulation which in its spirit exactly matches its Wasserstein metric counterpart. Additionally, I show that it corresponds to a coupled-two-marginal formulation with a one-sided hard marginal constraint, which can be argued to be a more natural extension of the idea of a Wasserstein barycenter to the unbalanced setting. Furthermore, the analysis of the conic multi-marginal formulation has established an explicit link between the unbalanced multi-marignal optimal
+transport framework studied in <a href="https://doi.org/10.1007/s10851-022-01126-7">[BLNS22]</a> and conic formulation of the HK barycenter problem studied in <a href="https://doi.org/10.1137/20M1315555">[FMS21]</a>. I further extend the results of <a href="https://doi.org/10.1007/s10851-022-01126-7">[BLNS22]</a> by showing that, as in the Wasserstein metric <a href="https://doi.org/10.1137/100805741">[AC11]</a>, the soft multi-marginal formulation can be posed over the space $X^N$ with the cost function defined as ”the least cost&quot;. <br><br></p>
+</div>
+<img src="/uot_barycenter_example.png" width="700"><br>The developed framework in action for a toy setup with two input 1D unbalanced Gaussian measures<br>for different choices of weights and cost functions.
+<p><br><br></p>
+<h4 id="ugeometric-modelling-of-polycrystalline-materialsu"><u>Geometric modelling of polycrystalline materials</u></h4>
+<br>
+<div style="text-align:justify; text-justify: inter-word">
+On the applications side, I am working with <a href="http://www.macs.hw.ac.uk/~db92/">David Bourne (Heriot-Watt)</a>, <a href="https://www.gla.ac.uk/schools/mathematicsstatistics/staff/stevenroper/">Steven Roper (Glasgow)</a>, <a href="https://www.jeanfeydy.com/">Jean Feydy (Inria Paris)</a> and Karo Sedighiani (Tata Steel) on efficient reconstruction and generation of microstructure with desirable properties related to size, location and aspect ratio of constitutive grains. <br><br> In a recently completed work <a href="/publications/#BFRSB24">[9]</a> , we propose a novel and fast approach based on anisotropic power diagrams. We rely on fast optimal transport algorithms that stream well on Graphics Processing Units (GPU) and handle non-uniform, anisotropic distance functions. This allows us to find APDs that best fit experimental data in (tens of) seconds, which unlocks their use for computational homogenisation. This is especially relevant to machine learning methods that require the generation of large collections of representative microstructures as training data. The paper is accompanied by a Python library, <a href="www.github.com/mbuze/PyAPD">PyAPD</a>.<br><br>
+</div>
+<img src="/logo.png" width="700"><br>PyAPD logo.<br><br>
+<br>
+<br></div>
 
 </main>
 
