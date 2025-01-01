@@ -12,8 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/cv/</guid>
-      <description>Career and Education  February 2023 - Present  Research Associate at School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK; A postdoctoral position funded by EPSRC grant
-awarded jointly to Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.  I am primarily working with Dr D. Bourne and Dr Steven Roper (Glasgow) on using modern GPU-oriented optimal transport computational tools in the modelling of polycrystalline materials. See our Python library, PyAPD.</description>
+      <description>Career and Education  January 2025 - Present  Lecturer in Mathematics and AI at MARS: Mathematics for AI in Real-world Systems, within School Of Mathematical Sciences, Lancaster University, UK; A permanent post (equivalent to Assistant Professor) as part of MARS, a newly-formed applied maths / AI research group at Lancaster. See here for more details.   February 2023 - January 2025  Research Associate at School of Mathematical and Computer Sciences, Heriot-Watt University, Edinburgh, UK; A postdoctoral position funded by EPSRC grant</description>
     </item>
     
     <item>
@@ -31,7 +30,7 @@ awarded jointly to Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.  I am pri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/events/</guid>
-      <description>Future events   Computational Materials Science and Mathematics at the Particle and Atomistic Scales ICMS, Edinburgh, UK, 10-14 November 2025 I am on the organising committee and will run a one-day session devoted to numerical continuation/deflation and optimisation techniques at the atomistic scale. More info to follow. website. --    Singularities in Discrete Systems Oberwolfach, Germany 4-9 May 2025. website    Summer School on Deep Learning for Mathematical Imaging  University of Liverpool, July 2024 I am invited by Dr Andreas Alpers to deliver a short course on machine learning approaches to microstructure modelling in Python, including a hands-on showcase of my library PyAPD, to research interns at The Centre for Mathematical Imaging Techniques.</description>
+      <description>Future events   Computational Materials Science and Mathematics at the Particle and Atomistic Scales ICMS, Edinburgh, UK, 10-14 November 2025 I am on the organising committee and will run a one-day session devoted to numerical continuation/deflation and optimisation techniques at the atomistic scale. More info to follow. website. --    Singularities in Discrete Systems Oberwolfach, Germany 4-9 May 2025. website    Past events  (30 talks, including 9 in the last year)  Visit to Kanazawa Kanazawa University, Japan, 16 - 20 December 2024 Hosted by Patrick van Meurs, I also gave a seminar talk.</description>
     </item>
     
     <item>
@@ -49,7 +48,7 @@ awarded jointly to Prof. John Ball, Dr David Bourne, Dr Lucia Scardia.  I am pri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://mbuze.github.io/publications/</guid>
-      <description>[10]   J.&amp;nbsp;Braun and M.&amp;nbsp;Buze. Incompleteness of Sinclair-type continuum flexible boundary conditions for atomistic fracture simulations. arXiv e-prints, 2403.05462, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [9]   M.&amp;nbsp;Buze, J.&amp;nbsp;Feydy, S.R. Roper, K.&amp;nbsp;Sedighiani, and D.&amp;nbsp;Bourne. Anisotropic power diagrams for polycrystal modelling: efficient generation of curved grains via optimal transport. arXiv e-prints, 2403.03571, 2024. [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [8]   M.&amp;nbsp;Buze. Constrained Hellinger-Kantorovich barycenters: least-cost soft and conic multi-marginal formulations.</description>
+      <description>[10]   J.&amp;nbsp;Braun and M.&amp;nbsp;Buze. Incompleteness of Sinclair-type continuum flexible boundary conditions for atomistic fracture simulations. arXiv e-prints, 2403.05462, 2024 (accepted for publication in SIAM MMS). [&amp;nbsp;bib&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [9]   M.&amp;nbsp;Buze, J.&amp;nbsp;Feydy, S.R. Roper, K.&amp;nbsp;Sedighiani, and D.&amp;nbsp;Bourne. Anisotropic power diagrams for polycrystal modelling: Efficient generation of curved grains via optimal transport, Computational Materials Science, Volume 245, 2024. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| http&amp;nbsp;| .pdf&amp;nbsp;]   [8]   M.</description>
     </item>
     
     <item>
